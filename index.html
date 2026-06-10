@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucky Motors Peterborough Ltd — Used Cars, Air Con & ECU Remapping</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Anton&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green:      #2D6B16;
+      --green-dark: #1A4209;
+      --green-mid:  #3A8520;
+      --charcoal:   #2D2D2D;
+      --off:        #F5F7F4;
+      --border:     #DDE5D8;
+      --text:       #3A3A3A;
+    }
+    body { font-family: 'Montserrat', sans-serif; background: #fff; color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+    /* NAV */
+    nav { background: var(--green-dark); position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--green-mid); }
+    .nav-inner { max-width: 100%; padding: 0 20px 0 16px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .nav-logo { padding-left: 0; }
+    .nav-logo img { height: 68px; width: auto; display: block; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.75); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.15s; }
+    .nav-links a:hover { color: #fff; }
+    .nav-phone { display: flex; align-items: center; gap: 8px; background: #fff; color: var(--green-dark); padding: 10px 20px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; text-decoration: none; font-family: 'Montserrat', sans-serif; transition: background 0.15s, transform 0.15s; }
+    .nav-phone:hover { background: #e8f0e4; transform: translateY(-1px); }
+    .nav-phone svg { flex-shrink: 0; }
+
+    /* HERO */
+    .hero { position: relative; height: 55vh; min-height: 360px; overflow: hidden; }
+    .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.15) 100%); }
+    .hero-content { position: absolute; inset: 0; display: flex; align-items: flex-end; }
+    .hero-inner { max-width: 1180px; margin: 0 auto; padding: 0 28px 60px; width: 100%; }
+    .hero-tag { display: inline-block; background: var(--green-mid); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 14px; border-radius: 4px; margin-bottom: 16px; }
+    .hero-content h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 7vw, 6rem); color: #fff; line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 8px; }
+    .hero-content h1 span { color: #fff; }
+    .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; font-weight: 500; }
+    .btn-green { background: var(--green); color: #fff; padding: 14px 32px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; border: none; cursor: pointer; }
+    .btn-green:hover { background: var(--green-mid); transform: translateY(-2px); }
+    .btn-white { background: #fff; color: var(--green-dark); padding: 14px 32px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; border: none; cursor: pointer; }
+    .btn-white:hover { background: #e8f0e4; transform: translateY(-2px); }
+
+    /* SECTION WRAPPER */
+    .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+    /* CARS */
+    .cars-section { padding: 70px 0; background: #fff; }
+    .sec-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; }
+    .sec-label { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--green-dark); letter-spacing: 0.04em; }
+    .sec-link { font-size: 0.82rem; font-weight: 700; color: var(--green); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; }
+    .sec-link:hover { color: var(--orange); }
+
+    /* FILTERS */
+    .filters { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+    .filter { padding: 7px 18px; border-radius: 100px; border: 1.5px solid var(--border); background: #fff; color: #888; font-size: 0.78rem; font-weight: 600; cursor: pointer; letter-spacing: 0.04em; text-transform: uppercase; transition: all 0.15s; font-family: 'Montserrat', sans-serif; }
+    .filter:hover { border-color: var(--green); color: var(--green); }
+    .car-card.hidden { display: none; }
+    .show-more-wrap { text-align: center; margin-top: 36px; }
+    .btn-show-more { background: #fff; border: 2px solid var(--green-dark); color: var(--green-dark); padding: 13px 36px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; cursor: pointer; font-family: 'Montserrat', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; transition: background 0.15s, color 0.15s, transform 0.15s; display: inline-flex; align-items: center; gap: 8px; }
+    .btn-show-more:hover { background: var(--green-dark); color: #fff; transform: translateY(-2px); }
+    .filter.on { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
+
+    /* CAR GRID */
+    .car-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .car-card { border: 1.5px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; transition: box-shadow 0.2s, transform 0.2s; }
+    .car-card:hover { box-shadow: 0 16px 40px rgba(45,107,22,0.13), 0 4px 12px rgba(0,0,0,0.06); transform: translateY(-4px); }
+    .car-card:hover .car-photo img { transform: scale(1.05); }
+    .car-photo { overflow: hidden; position: relative; }
+    .car-photo img { width: 100%; height: 195px; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .car-badge { position: absolute; top: 10px; left: 10px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
+    .b-green { background: var(--green); color: #fff; }
+    .b-white { background: #fff; color: var(--green-dark); }
+    .b-red { background: #D63030; color: #fff; }
+    .car-body { padding: 16px 18px 18px; }
+    .car-make { font-size: 0.68rem; color: #9CA3AF; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
+    .car-name { font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--charcoal); margin-bottom: 10px; line-height: 1.35; }
+    .car-meta { display: flex; gap: 14px; font-size: 0.76rem; color: #9CA3AF; font-weight: 500; margin-bottom: 14px; }
+    .car-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1.5px solid var(--border); }
+    .car-price { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; color: var(--green-dark); letter-spacing: 0.02em; line-height: 1; }
+    .car-price small { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 500; color: #9CA3AF; display: block; letter-spacing: 0; }
+    .car-btn { background: var(--off); border: 1.5px solid var(--border); color: var(--charcoal); padding: 8px 16px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.15s, border-color 0.15s, color 0.15s; }
+    .car-btn:hover { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
+
+    /* DIVIDER */
+    .divider { height: 4px; background: linear-gradient(to right, var(--green-dark), var(--green-mid), var(--orange)); }
+
+    /* AIR CON */
+    .aircon-section { background: var(--green-dark); padding: 70px 0; }
+    .aircon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .aircon-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #7ECB5A; margin-bottom: 12px; }
+    .aircon-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); color: #fff; line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 6px; }
+    .aircon-heading span { color: #7ECB5A; }
+    .aircon-sub { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 24px; }
+    .aircon-desc { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.75; margin-bottom: 28px; }
+    .aircon-benefits { display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
+    .aircon-benefit { display: flex; align-items: flex-start; gap: 12px; }
+    .aircon-tick { width: 22px; height: 22px; background: #7ECB5A; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .aircon-benefit-text strong { display: block; font-size: 0.85rem; color: #fff; font-weight: 700; margin-bottom: 1px; }
+    .aircon-benefit-text span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+    .aircon-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+    .aircon-price-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px 20px; }
+    .aircon-price-type { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 4px; }
+    .aircon-price-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: #7ECB5A; line-height: 1; }
+    .aircon-price-num small { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: rgba(255,255,255,0.4); font-weight: 500; display: block; letter-spacing: 0; margin-top: 2px; }
+    .aircon-img-wrap { position: relative; border-radius: 14px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+    .aircon-img-wrap img { width: 100%; display: block; }
+    .aircon-badges { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+    .aircon-badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; padding: 8px 14px; font-size: 0.72rem; font-weight: 700; color: rgba(255,255,255,0.7); letter-spacing: 0.06em; text-transform: uppercase; }
+    .btn-aircon { background: #7ECB5A; color: var(--green-dark); padding: 14px 36px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; }
+    .btn-aircon:hover { background: #93d872; transform: translateY(-2px); }
+
+    /* ECU REMAP */
+    .ecu-section { padding: 70px 0; background: var(--off); }
+    .ecu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .ecu-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
+    .ecu-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); color: var(--charcoal); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 16px; }
+    .ecu-heading span { color: var(--green-dark); }
+    .ecu-desc { font-size: 0.9rem; color: #6B7280; line-height: 1.75; margin-bottom: 28px; }
+    .ecu-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 32px; }
+    .ecu-benefit { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
+    .ecu-tick { width: 20px; height: 20px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ecu-price-block { background: var(--green-mid); border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .ecu-price-label { font-family: 'Anton', sans-serif; font-size: 1.4rem; color: #fff; letter-spacing: 0.04em; line-height: 1.1; }
+    .ecu-price-note { font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-weight: 500; }
+    .ecu-price-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.8rem; color: #fff; line-height: 1; letter-spacing: -0.01em; }
+    .ecu-img { width: 100%; border-radius: 12px; display: block; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+
+    /* REVIEWS */
+    .reviews-section { background: var(--off); padding: 64px 0; }
+    .reviews-header { text-align: center; margin-bottom: 40px; }
+    .reviews-score { display: inline-flex; align-items: center; gap: 20px; background: #fff; border-radius: 12px; padding: 20px 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+    .reviews-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--green-dark); line-height: 1; }
+    .reviews-stars { color: #F4B400; font-size: 1.4rem; letter-spacing: 2px; }
+    .reviews-count { font-size: 0.8rem; color: #666; margin-top: 2px; }
+    .google-logo { height: 24px; margin-left: 12px; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .review-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .review-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .review-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+    .review-name { font-weight: 700; font-size: 0.88rem; color: var(--charcoal); }
+    .review-stars { color: #F4B400; font-size: 0.9rem; margin-top: 2px; }
+    .review-time { font-size: 0.75rem; color: #999; margin-left: auto; white-space: nowrap; }
+    .review-text { font-size: 0.85rem; color: #555; line-height: 1.65; }
+    @media(max-width:900px) { .reviews-grid { grid-template-columns: 1fr 1fr; } }
+    @media(max-width:580px) { .reviews-grid { grid-template-columns: 1fr; } .reviews-score { flex-wrap: wrap; justify-content: center; text-align: center; } }
+
+    /* FOOTER */
+    footer { background: var(--green-dark); border-top: 3px solid var(--orange); padding: 40px 0 28px; }
+    .foot-grid { display: grid; grid-template-columns: auto 1fr auto; gap: 48px; align-items: center; margin-bottom: 28px; }
+    .foot-logo img { height: 60px; width: auto; display: block; filter: brightness(0) invert(1); }
+    .foot-contact { display: flex; flex-direction: column; gap: 6px; }
+    .foot-contact a, .foot-contact span { font-size: 0.85rem; color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.15s; font-weight: 500; }
+    .foot-contact a:hover { color: var(--orange); }
+    .foot-contact strong { color: #fff; }
+    .foot-tagline { text-align: right; }
+    .foot-tagline p { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: #fff; letter-spacing: 0.05em; line-height: 1; }
+    .foot-tagline p span { color: var(--orange); }
+    .foot-bottom { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+    .foot-bottom span { font-size: 0.75rem; color: rgba(255,255,255,0.3); font-weight: 500; }
+
+    @media (max-width: 900px) {
+      .car-grid { grid-template-columns: repeat(2, 1fr); }
+      .aircon-grid { grid-template-columns: 1fr; gap: 36px; }
+      .ecu-grid { grid-template-columns: 1fr; gap: 40px; }
+      .foot-grid { grid-template-columns: 1fr; gap: 24px; }
+      .foot-tagline { text-align: left; }
+    }
+    @media (max-width: 580px) {
+      .car-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .ecu-benefits { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="ejcuts/lucky motors logo.png" alt="Lucky Motors Peterborough Ltd">
+    </a>
+    <div class="nav-links">
+      <a href="#cars">Our Cars</a>
+      <a href="#aircon">Air Con</a>
+      <a href="#ecu">ECU Remap</a>
+    </div>
+    <a href="tel:01733977754" class="nav-phone">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      01733 977754
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <img src="ejcuts/garage pic.webp" alt="Lucky Motors forecourt">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-inner">
+      <div class="hero-tag">Lucky Motors Peterborough Ltd</div>
+      <h1>THE CHEAPEST<br><span>CARS IN THE UK</span></h1>
+      <p class="hero-sub">Quality used cars &middot; Air con re-gas &middot; ECU remapping â€" all under one roof.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="#cars" class="btn-green">Browse Stock</a>
+        <a href="tel:01733977754" class="btn-white">Call Us Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CARS -->
+<section id="cars" class="cars-section">
+  <div class="wrap">
+    <div class="sec-header">
+      <div class="sec-label">Current Stock <span style="font-family:’Montserrat’,sans-serif;font-size:0.85rem;font-weight:600;color:#9CA3AF;">&#8212; Live from eBay Motors</span></div>
+      <a href="https://showroom.ebaymotorspro.co.uk/lucky-motors" target="_blank" class="sec-link">View all on eBay &rarr;</a>
+    </div>
+
+    <div id="car-grid" class="car-grid">
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1xQAAeSwK99qJc3k/$_2.JPG" alt="MINI Cooper S D">
+          <span class="car-badge b-green">New In</span>
+        </div>
+        <div class="car-body">
+          <div class="car-make">2016 &middot; MINI</div>
+          <div class="car-name">Hatchback 2.0 Cooper S D</div>
+          <div class="car-meta"><span>122,992 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;5,995</div>
+            <a href="https://www.ebay.co.uk/itm/198409293158" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/EhYAAeSwKE9qJ8N5/$_2.JPG" alt="Ford S-Max">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2015 &middot; Ford</div>
+          <div class="car-name">S-Max 2.0 TDCi 150 Titanium</div>
+          <div class="car-meta"><span>100,997 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;5,995</div>
+            <a href="https://www.ebay.co.uk/itm/198406561344" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/SJAAAeSwRqNqJ8N5/$_2.JPG" alt="Audi Q5">
+          <span class="car-badge b-white">Hot Deal</span>
+        </div>
+        <div class="car-body">
+          <div class="car-make">2015 &middot; Audi</div>
+          <div class="car-name">Q5 2.0 TDI Quattro S Line</div>
+          <div class="car-meta"><span>135,673 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;5,995</div>
+            <a href="https://www.ebay.co.uk/itm/198399800316" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/0UUAAeSw~itqJ8N3/$_2.JPG" alt="Porsche Cayenne">
+          <span class="car-badge b-white">Hot Deal</span>
+        </div>
+        <div class="car-body">
+          <div class="car-make">2011 &middot; Porsche</div>
+          <div class="car-name">Cayenne Diesel [245]</div>
+          <div class="car-meta"><span>185,725 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;6,395</div>
+            <a href="https://www.ebay.co.uk/itm/198397499578" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1fQAAeSwvMlqJ8N3/$_2.JPG" alt="Audi A5">
+          <span class="car-badge b-green">New In</span>
+        </div>
+        <div class="car-body">
+          <div class="car-make">2017 &middot; Audi</div>
+          <div class="car-name">A5 2.0 TDI Quattro Sport</div>
+          <div class="car-meta"><span>132,987 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;8,495</div>
+            <a href="https://www.ebay.co.uk/itm/198359551428" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/LZMAAeSwYj9qJ8N7/$_2.JPG" alt="Ford Fiesta">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2016 &middot; Ford</div>
+          <div class="car-name">Fiesta 1.0 EcoBoost Zetec</div>
+          <div class="car-meta"><span>113,383 mi</span><span>Petrol</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,695</div>
+            <a href="https://www.ebay.co.uk/itm/198399824533" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ANoAAeSw3z9qH8dl/$_2.JPG" alt="Mercedes B Class">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2013 &middot; Mercedes-Benz</div>
+          <div class="car-name">B Class B200 CDI</div>
+          <div class="car-meta"><span>140,903 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,995</div>
+            <a href="https://www.ebay.co.uk/itm/198387608673" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/rv4AAeSwoC9qJl-q/$_2.JPG" alt="Ford Mondeo">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2015 &middot; Ford</div>
+          <div class="car-name">Mondeo 2.0 TDCi ECOnetic</div>
+          <div class="car-meta"><span>125,815 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;3,395</div>
+            <a href="https://www.ebay.co.uk/itm/198387588796" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/QnwAAeSwE-FqHnKf/$_2.JPG" alt="MINI Paceman">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2014 &middot; MINI</div>
+          <div class="car-name">Paceman 1.6 Cooper D</div>
+          <div class="car-meta"><span>120,618 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,595</div>
+            <a href="https://www.ebay.co.uk/itm/198368198297" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~loAAeSwDe5qJl-p/$_2.JPG" alt="MINI One D">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2015 &middot; MINI</div>
+          <div class="car-name">Hatchback 1.5 One D</div>
+          <div class="car-meta"><span>108,604 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;3,494</div>
+            <a href="https://www.ebay.co.uk/itm/198364078055" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1KAAAeSwOqpqJ8N6/$_2.JPG" alt="VW Caddy">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2015 &middot; Volkswagen</div>
+          <div class="car-name">Caddy 1.6 TDI Startline Van</div>
+          <div class="car-meta"><span>121,279 mi</span><span>Diesel</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;3,595</div>
+            <a href="https://www.ebay.co.uk/itm/198357132205" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/n4UAAeSwBspqEpSb/$_2.JPG" alt="Fiat 500">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2016 &middot; Fiat</div>
+          <div class="car-name">500 1.2 Pop Star 3dr</div>
+          <div class="car-meta"><span>110,645 mi</span><span>Petrol</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,800</div>
+            <a href="https://www.ebay.co.uk/itm/198345680075" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hXoAAeSwv4RqHnKd/$_2.JPG" alt="Smart ForTwo">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2018 &middot; Smart</div>
+          <div class="car-name">ForTwo Coupe 1.0 Passion</div>
+          <div class="car-meta"><span>118,996 mi</span><span>Petrol</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,750</div>
+            <a href="https://www.ebay.co.uk/itm/198345664530" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="car-card" style="display:none">
+        <div class="car-photo">
+          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/AZwAAeSwHClqJQ~F/$_2.JPG" alt="Vauxhall Adam">
+        </div>
+        <div class="car-body">
+          <div class="car-make">2013 &middot; Vauxhall</div>
+          <div class="car-name">Adam 1.4i Jam 3dr</div>
+          <div class="car-meta"><span>95,738 mi</span><span>Petrol</span></div>
+          <div class="car-foot">
+            <div class="car-price">&pound;2,895</div>
+            <a href="https://www.ebay.co.uk/itm/198340001302" target="_blank" class="car-btn">View on eBay</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="show-more-wrap" id="showMoreWrap">
+      <button class="btn-show-more" id="showMoreBtn" onclick="toggleCars()">
+        <span id="showMoreLabel">Show All 14 Cars</span>
+        <svg id="showMoreIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AIR CON -->
+<section id="aircon" class="aircon-section" style="padding:0;">
+  <img src="ejcuts/air con add.PNG" alt="Lucky Motors Air Con Re-Gas â€" All Makes &amp; Models" style="width:100%;display:block;">
+</section>
+
+<div class="divider"></div>
+
+<!-- ECU REMAP -->
+<section id="ecu" class="ecu-section">
+  <div class="wrap">
+    <div class="ecu-grid">
+      <div>
+        <img src="ejcuts/ecu remaping.JPG" alt="ECU Remapping Services" class="ecu-img">
+      </div>
+      <div>
+        <div class="ecu-eyebrow">Performance Tuning</div>
+        <div class="ecu-heading">ECU REMAPPING<br><span>&amp; CAR CODING</span></div>
+        <p class="ecu-desc">If your car feels a bit flat or you're finding it burns through fuel quicker than it should, there's a good chance the factory settings are holding it back. Here at Lucky Motors we plug directly into your ECU and rewrite the map to suit your engine properly â€" not some generic file downloaded off the internet. Most customers notice the difference straight away: better throttle response, more pull when you need it, and usually a decent saving at the pump on longer runs. We cover standard performance remaps as well as DPF solutions, EGR calibration, gearbox tuning, injector coding and more. Give us a call and we'll tell you exactly what we can do for your car.</p>
+        <div class="ecu-benefits">
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Increased performance</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Improved fuel economy</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Rev limiter adjustments</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Safe &amp; detailed tuning</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>All makes &amp; models</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>100% safe &amp; reliable</div>
+        </div>
+        <div class="ecu-price-block">
+          <div>
+            <div class="ecu-price-label">ECU REMAP</div>
+            <div class="ecu-price-note">Includes full printed report</div>
+          </div>
+          <div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:#fff;line-height:1.1;letter-spacing:0.03em;">Call to book<br>your car in</div>
+          </div>
+        </div>
+        <a href="tel:01733977754" class="btn-green">Call to Book In</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="wrap">
+    <div class="reviews-header">
+      <div class="reviews-score">
+        <div class="reviews-num">4.8</div>
+        <div>
+          <div class="reviews-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <div class="reviews-count">Based on 33 Google Reviews</div>
+        </div>
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+      </div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocLJ6TVQiDmR1u_WIDk-B-8tjBg_RTJyFSLSTHgWRRqXYwAxAQ=s128-c0x00000000-cc-rp-mo" alt="Darius Hooper" class="review-avatar">
+          <div>
+            <div class="review-name">Darius Hooper</div>
+            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          </div>
+          <span class="review-time">6 months ago</span>
+        </div>
+        <p class="review-text">"Bought a car from Lucky Motors 2 weeks ago. We received excellent service from start to finish. Very honest and genuine car dealer!"</p>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocImKLTWt2ews_b1yw2qPjyQl0jje-7aL-vtgcoyp_DPTQ3W7w=s128-c0x00000000-cc-rp-mo" alt="sam langridge" class="review-avatar">
+          <div>
+            <div class="review-name">Sam Langridge</div>
+            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          </div>
+          <span class="review-time">6 months ago</span>
+        </div>
+        <p class="review-text">"Great garage, bought a lovely VW Golf today. Very helpful and friendly, cares about the customer, not pushy at all. Would definitely recommend."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocL4D5Bxn18rKQquCmJn_cXlM_f0fB2okmQi6rHD1gtF9zN4KA=s128-c0x00000000-cc-rp-mo" alt="Kev Foxcroft" class="review-avatar">
+          <div>
+            <div class="review-name">Kev Foxcroft</div>
+            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          </div>
+          <span class="review-time">a year ago</span>
+        </div>
+        <p class="review-text">"Decent no hassle friendly bloke. One test drive later, we now have a decent little runaround which wasn't overpriced and absolutely spotless. Well recommended."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjVuYQUTGXOn_9sj4t0W-mul8AnZVwVM5gq_XeN-Ui58mgyiY9WL=s128-c0x00000000-cc-rp-mo-ba2" alt="Sunil Kumar" class="review-avatar">
+          <div>
+            <div class="review-name">Sunil Kumar</div>
+            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          </div>
+          <span class="review-time">a year ago</span>
+        </div>
+        <p class="review-text">"From start to finish the whole process was seamless. At no point did we feel uncomfortable or pushed into anything. Would 100% recommend â€" fantastic service!"</p>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW3XzArIvelSy7LDUjoM1NGvRWSs2-WKp_OkCyBNlwwYxSH6cY=s128-c0x00000000-cc-rp-mo-ba4" alt="Michael Sampson" class="review-avatar">
+          <div>
+            <div class="review-name">Michael Sampson</div>
+            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          </div>
+          <span class="review-time">2 years ago</span>
+        </div>
+        <p class="review-text">"Although I travelled 54 miles to view the car it was worth the journey. One on one sale, relaxed environment. Very happy customer and do recommend."</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="https://www.google.com/maps/place/?q=place_id:ChIJb9T6T0Xxd0gRXm6NXv8kf7U" target="_blank" class="btn-green">See All 33 Reviews on Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-logo">
+        <img src="ejcuts/lucky motors logo.png" alt="Lucky Motors">
+      </div>
+      <div class="foot-contact">
+        <a href="tel:01733977754"><strong>01733 977754</strong></a>
+        <a href="mailto:anis20045@msn.com">anis20045@msn.com</a>
+        <span>Unit 1, Wareley Road, Peterborough, PE2 9PF</span>
+        <span>Open 7 days a week &middot; 9am â€" 6pm</span>
+        <a href="https://www.facebook.com" target="_blank">Facebook â€" Lucky Motors Peterborough Ltd</a>
+      </div>
+      <div class="foot-tagline">
+        <p>THE CHEAPEST</p>
+        <p><span style="color:var(--orange);">CARS IN THE UK</span></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Â© 2025 Lucky Motors Peterborough Ltd. All rights reserved.</span>
+      <span>Unit 1, Wareley Road &middot; Peterborough &middot; PE2 9PF</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var expanded = false;
+  function toggleCars() {
+    expanded = !expanded;
+    document.querySelectorAll('#car-grid .car-card').forEach(function(c, i) {
+      if (i >= 6) c.style.display = expanded ? '' : 'none';
+    });
+    document.getElementById('showMoreLabel').textContent = expanded ? 'Show Less' : 'Show All 14 Cars';
+    document.getElementById('showMoreIcon').innerHTML = expanded ? '<path d="M7 14l5-5 5 5z"/>' : '<path d="M7 10l5 5 5-5z"/>';
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+      var t = document.querySelector(a.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth' }); }
+    });
+  });
+</script>
+</body>
+</html>
