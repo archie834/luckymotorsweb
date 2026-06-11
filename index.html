@@ -158,32 +158,7 @@
 
     /* AIR CON */
     .aircon-section { background: var(--green-dark); padding: 32px 0; }
-    .aircon-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
-    .aircon-eyebrow { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: #fff; margin-bottom: 6px; }
-    .aircon-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(1.8rem, 3.2vw, 2.8rem); color: #fff; line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 4px; }
-    .aircon-heading span { color: #fff; }
-    .aircon-sub { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 8px; }
-    .aircon-desc { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.55; margin-bottom: 12px; }
-    .aircon-benefits { display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
-    .aircon-benefit { display: flex; align-items: flex-start; gap: 10px; }
-    .aircon-tick { width: 17px; height: 17px; background: #7ECB5A; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
-    .aircon-benefit-text strong { display: block; font-size: 0.8rem; color: #fff; font-weight: 700; margin-bottom: 1px; }
-    .aircon-benefit-text span { font-size: 0.72rem; color: rgba(255,255,255,0.5); }
-    .aircon-price-block { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
-    .aircon-price-label { font-family: 'Anton', sans-serif; font-size: 0.98rem; color: #fff; letter-spacing: 0.04em; line-height: 1.2; }
-    .aircon-price-note { font-size: 0.7rem; color: rgba(255,255,255,0.5); margin-top: 3px; font-weight: 500; }
-    .aircon-price-cta { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; color: #fff; line-height: 1.05; letter-spacing: 0.03em; text-align: right; white-space: nowrap; }
-    .aircon-img-wrap { position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
-    .aircon-img-wrap img { width: 100%; aspect-ratio: 16 / 8; object-fit: cover; display: block; }
-    .aircon-sticker { position: absolute; bottom: 10px; right: 10px; width: 96px; height: 96px; border-radius: 50%; background: #7ECB5A; border: 3px solid #fff; box-shadow: 0 14px 32px rgba(0,0,0,0.4); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; text-align: center; padding: 8px; transform: rotate(-7deg); }
-    .aircon-sticker svg { flex-shrink: 0; width: 15px; height: 15px; }
-    .aircon-sticker span { font-family: 'Montserrat', sans-serif; font-size: 0.46rem; font-weight: 800; line-height: 1.2; text-transform: uppercase; letter-spacing: 0.01em; color: var(--green-dark); max-width: 64px; }
-    .aircon-img-card { position: relative; width: calc(100% - 48px); margin: -28px 0 0 48px; border-radius: 10px; border: 4px solid #fff; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.3); z-index: 2; }
-    .aircon-img-card img { width: 100%; aspect-ratio: 390 / 170; object-fit: cover; display: block; }
-    .aircon-badges { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
-    .aircon-badge { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 6px; padding: 6px 12px; font-size: 0.68rem; font-weight: 700; color: rgba(255,255,255,0.7); letter-spacing: 0.06em; text-transform: uppercase; }
-    .btn-aircon { background: #7ECB5A; color: var(--green-dark); padding: 10px 28px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; }
-    .btn-aircon:hover { background: #93d872; transform: translateY(-2px); }
+    .aircon-banner { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.35); }
 
     /* ECU REMAP */
     .ecu-section { padding: 70px 0 30px; background: var(--off); }
@@ -253,7 +228,6 @@
     .foot-bottom span { font-size: 0.75rem; color: rgba(255,255,255,0.3); font-weight: 500; }
 
     @media (max-width: 900px) {
-      .aircon-grid { grid-template-columns: 1fr; gap: 36px; }
       .ecu-grid { grid-template-columns: 1fr; gap: 40px; }
       .ecu-photo-card { display: none; }
       .foot-grid { grid-template-columns: 1fr; gap: 24px; }
@@ -454,61 +428,7 @@
 <!-- AIR CON -->
 <section id="aircon" class="aircon-section">
   <div class="wrap">
-    <div class="aircon-grid">
-      <div>
-        <div class="aircon-eyebrow">Climate Control Specialists</div>
-        <h2 class="aircon-heading">AIR CON RE-GAS<br><span>ALL MAKES &amp; MODELS</span></h2>
-        <div class="aircon-sub">Stay Cool. Drive Comfort.</div>
-        <p class="aircon-desc">Whether your air con is blowing warm or barely blowing at all, our technicians will get it back to ice-cold fast. We service cars, vans &amp; light commercial vehicles of every make and model.</p>
-        <div class="aircon-benefits">
-          <div class="aircon-benefit">
-            <div class="aircon-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#315522"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-            <div class="aircon-benefit-text"><strong>Ice Cold Air</strong><span>Powerful cooling when you need it most.</span></div>
-          </div>
-          <div class="aircon-benefit">
-            <div class="aircon-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#315522"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-            <div class="aircon-benefit-text"><strong>Better Fuel Efficiency</strong><span>A well serviced air con system uses less fuel.</span></div>
-          </div>
-          <div class="aircon-benefit">
-            <div class="aircon-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#315522"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-            <div class="aircon-benefit-text"><strong>Faster Window Demisting</strong><span>Clearer windows for safer driving all year round.</span></div>
-          </div>
-          <div class="aircon-benefit">
-            <div class="aircon-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#315522"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-            <div class="aircon-benefit-text"><strong>Air Con Health Check</strong><span>We check your system pressure and performance.</span></div>
-          </div>
-          <div class="aircon-benefit">
-            <div class="aircon-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#315522"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>
-            <div class="aircon-benefit-text"><strong>All Makes &amp; Models</strong><span>Cars, vans &amp; light commercial vehicles.</span></div>
-          </div>
-        </div>
-        <div class="aircon-price-block">
-          <div>
-            <div class="aircon-price-label">AIR CON RE-GAS</div>
-            <div class="aircon-price-note">R134a &amp; R1234yf &mdash; all makes &amp; models</div>
-          </div>
-          <div class="aircon-price-cta">Call to<br>book in</div>
-        </div>
-        <a href="tel:01733977754" class="btn-aircon">Book Your Air Con Service</a>
-        <div class="aircon-badges">
-          <div class="aircon-badge">Professional Equipment</div>
-          <div class="aircon-badge">Certified Service</div>
-          <div class="aircon-badge">Competitive Prices</div>
-        </div>
-      </div>
-      <div>
-        <div class="aircon-img-wrap">
-          <img src="ejcuts/aircon-vent.jpg" alt="Cold air flowing from a car air conditioning vent" loading="lazy">
-          <div class="aircon-sticker">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green-dark)" stroke-width="2" stroke-linecap="round"><line x1="12" y1="2" x2="12" y2="22"/><line x1="4" y1="7" x2="20" y2="17"/><line x1="20" y1="7" x2="4" y2="17"/></svg>
-            <span>Keep your air con at its best</span>
-          </div>
-        </div>
-        <div class="aircon-img-card">
-          <img src="ejcuts/aircon-gauges.jpg" alt="Air con re-gas gauge manifold used by Lucky Motors technicians" loading="lazy">
-        </div>
-      </div>
-    </div>
+    <img src="ejcuts/air con add.PNG" alt="Lucky Motors Air Con Re-Gas - all makes and models, R134a and R1234yf, call to book in" class="aircon-banner" loading="lazy">
   </div>
 </section>
 
