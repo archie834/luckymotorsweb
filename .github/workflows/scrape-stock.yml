@@ -21,14 +21,14 @@ jobs:
       - name: Scrape eBay showroom stock
         run: node scrape-stock.mjs
 
-      - name: Commit changes if stock.json updated
+      - name: Commit changes if stock updated
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- stock.json; then
+          git add stock.json stock-images
+          if git diff --cached --quiet; then
             echo "No stock changes."
           else
-            git add stock.json
             git commit -m "Update car stock"
             git push
           fi

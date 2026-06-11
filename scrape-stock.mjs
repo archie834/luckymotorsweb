@@ -1,6 +1,9 @@
 import fs from 'fs';
+import path from 'path';
+import { Jimp, JimpMime } from 'jimp';
 
 const BASE_URL = 'https://showroom.ebaymotorspro.co.uk/lucky-motors';
+const IMAGES_DIR = 'stock-images';
 
 async function fetchPage(page) {
   const url = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
@@ -45,6 +48,24 @@ function parseTotalCount(html) {
   return { perPage: parseInt(m[1], 10), total: parseInt(m[2], 10) };
 }
 
+function getItemId(link) {
+  const m = link.match(/\/itm\/(\d+)/);
+  return m ? m[1] : null;
+}
+
+// Download a self-hosted copy of each listing photo so the site doesn't
+// depend on eBay's image CDN (which some browsers/extensions block).
+async function downloadImage(url, id) {
+  const largeUrl = url.replace(/\$_\d+\.JPG$/i, '$_12.JPG');
+  const res = await fetch(largeUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+  if (!res.ok) throw new Error(`Failed to fetch image ${largeUrl}: ${res.status}`);
+  const buffer = Buffer.from(await res.arrayBuffer());
+  const image = await Jimp.read(buffer);
+  const outPath = path.join(IMAGES_DIR, `${id}.jpg`);
+  fs.writeFileSync(outPath, await image.getBuffer(JimpMime.jpeg, { quality: 80 }));
+  return outPath.replace(/\\/g, '/');
+}
+
 const firstPageHtml = await fetchPage(1);
 const { perPage, total } = parseTotalCount(firstPageHtml);
 let allItems = parseItems(firstPageHtml);
@@ -58,6 +79,25 @@ for (let p = 2; p <= totalPages; p++) {
 if (allItems.length === 0) {
   console.error('Scraped 0 vehicles — the showroom page layout may have changed. Leaving stock.json untouched.');
   process.exit(1);
+}
+
+fs.mkdirSync(IMAGES_DIR, { recursive: true });
+
+const keepFiles = new Set();
+for (const item of allItems) {
+  const id = getItemId(item.link);
+  if (!id || !item.image) continue;
+  try {
+    item.image = await downloadImage(item.image, id);
+    keepFiles.add(path.basename(item.image));
+  } catch (err) {
+    console.error(`Image download failed for ${id}: ${err.message}`);
+  }
+}
+
+// Remove cached images for vehicles that are no longer in stock
+for (const file of fs.readdirSync(IMAGES_DIR)) {
+  if (!keepFiles.has(file)) fs.unlinkSync(path.join(IMAGES_DIR, file));
 }
 
 const output = {
