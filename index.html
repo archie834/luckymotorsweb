@@ -306,10 +306,6 @@
     .ecu-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
     .ecu-benefit { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
     .ecu-tick { width: 20px; height: 20px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-    .ecu-price-block { background: var(--green-mid); border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
-    .ecu-price-label { font-family: 'Anton', sans-serif; font-size: 1.4rem; color: #fff; letter-spacing: 0.04em; line-height: 1.1; }
-    .ecu-price-note { font-size: 0.72rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-weight: 500; }
-    .ecu-price-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.8rem; color: #fff; line-height: 1; letter-spacing: -0.01em; }
     .ecu-img { width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
 
     /* REVIEWS */
@@ -422,7 +418,7 @@
       .ecu-img { border-radius: 8px; box-shadow: none; }
       .ecu-eyebrow { grid-column: 2; grid-row: 1; font-size: 0.55rem; margin-bottom: 0; }
       .ecu-heading { grid-column: 2; grid-row: 2; font-size: 1.4rem; margin-bottom: 0; }
-      .ecu-desc { grid-column: 2; grid-row: 3; font-size: 0.7rem; line-height: 1.5; margin-bottom: 0; }
+      .ecu-desc { grid-column: 2; grid-row: 3; font-size: 0.7rem; line-height: 1.5; margin-bottom: 0; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
       .ecu-benefits { display: contents; }
       .ecu-benefit { font-size: 0.65rem; gap: 6px; }
       .ecu-benefit:nth-child(1) { grid-column: 1; grid-row: 4; }
@@ -431,7 +427,6 @@
       .ecu-benefit:nth-child(4) { grid-column: 2; grid-row: 5; }
       .ecu-tick { width: 14px; height: 14px; }
       .ecu-tick svg { width: 8px; height: 8px; }
-      .ecu-price-block { display: none; }
       .stat-strip { margin-top: -8px; border-radius: 10px; }
       .stat { padding: 12px 4px; }
       .stat-num { font-size: 1.2rem; }
@@ -693,21 +688,12 @@
       <div>
         <div class="ecu-eyebrow">Performance Tuning</div>
         <h2 class="ecu-heading">ECU REMAPPING<br><span>&amp; CAR CODING</span></h2>
-        <p class="ecu-desc">ECU remapping, car coding &amp; Apple CarPlay installation for all makes and models &mdash; better performance, efficiency and tech, done right.</p>
+        <p class="ecu-desc">At Lucky Motors, we specialise in ECU remapping, car coding, and Apple CarPlay installation for all makes and models. Whether you're looking for improved performance, better fuel efficiency, key programming, dashboard and module coding, or a seamless Apple CarPlay upgrade, our expert team has you covered.</p>
         <div class="ecu-benefits">
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Increased performance</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Improved fuel economy</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Key &amp; remote coding</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Dashboard &amp; mileage correction</div>
-        </div>
-        <div class="ecu-price-block">
-          <div>
-            <div class="ecu-price-label">ECU REMAP</div>
-            <div class="ecu-price-note">Includes full printed report</div>
-          </div>
-          <div>
-            <div style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:#fff;line-height:1.1;letter-spacing:0.03em;">Call to book<br>your car in</div>
-          </div>
         </div>
       </div>
     </div>
