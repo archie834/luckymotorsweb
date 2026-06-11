@@ -169,11 +169,10 @@
     .aircon-tick { width: 22px; height: 22px; background: #7ECB5A; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
     .aircon-benefit-text strong { display: block; font-size: 0.85rem; color: #fff; font-weight: 700; margin-bottom: 1px; }
     .aircon-benefit-text span { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
-    .aircon-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
-    .aircon-price-card { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 18px 20px; }
-    .aircon-price-type { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 4px; }
-    .aircon-price-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; color: #7ECB5A; line-height: 1; }
-    .aircon-price-num small { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: rgba(255,255,255,0.4); font-weight: 500; display: block; letter-spacing: 0; margin-top: 2px; }
+    .aircon-price-block { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 24px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-bottom: 28px; }
+    .aircon-price-label { font-family: 'Anton', sans-serif; font-size: 1.2rem; color: #fff; letter-spacing: 0.04em; line-height: 1.2; }
+    .aircon-price-note { font-size: 0.76rem; color: rgba(255,255,255,0.5); margin-top: 4px; font-weight: 500; }
+    .aircon-price-cta { font-family: 'Bebas Neue', sans-serif; font-size: 1.9rem; color: #7ECB5A; line-height: 1.05; letter-spacing: 0.03em; text-align: right; white-space: nowrap; }
     .aircon-img-wrap { position: relative; border-radius: 14px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
     .aircon-img-wrap img { width: 100%; aspect-ratio: 370 / 320; object-fit: cover; display: block; }
     .aircon-sticker { position: absolute; bottom: 16px; right: 16px; width: 150px; height: 150px; border-radius: 50%; background: #7ECB5A; border: 4px solid #fff; box-shadow: 0 14px 32px rgba(0,0,0,0.4); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; padding: 14px; transform: rotate(-7deg); }
@@ -483,15 +482,12 @@
             <div class="aircon-benefit-text"><strong>All Makes &amp; Models</strong><span>Cars, vans &amp; light commercial vehicles.</span></div>
           </div>
         </div>
-        <div class="aircon-prices">
-          <div class="aircon-price-card">
-            <div class="aircon-price-type">R134a Re-Gas From</div>
-            <div class="aircon-price-num">£50<small>Per Vehicle</small></div>
+        <div class="aircon-price-block">
+          <div>
+            <div class="aircon-price-label">AIR CON RE-GAS</div>
+            <div class="aircon-price-note">R134a &amp; R1234yf &mdash; all makes &amp; models</div>
           </div>
-          <div class="aircon-price-card">
-            <div class="aircon-price-type">R1234yf Re-Gas From</div>
-            <div class="aircon-price-num">£90<small>Per Vehicle</small></div>
-          </div>
+          <div class="aircon-price-cta">Call to<br>book in</div>
         </div>
         <a href="tel:01733977754" class="btn-aircon">Book Your Air Con Service</a>
         <div class="aircon-badges">
