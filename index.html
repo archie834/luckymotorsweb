@@ -322,6 +322,8 @@
     .google-logo { height: 24px; margin-left: 12px; }
     .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .review-card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .review-card.is-hidden { display: none; }
+    .reviews-more-wrap { display: flex; justify-content: center; margin-top: 24px; }
     .review-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
     .review-avatar { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
     .review-name { font-weight: 700; font-size: 0.88rem; color: var(--charcoal); }
@@ -459,6 +461,7 @@
       .review-stars { font-size: 0.5rem; }
       .review-time { display: none; }
       .review-text { font-size: 0.58rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+      .reviews-more-wrap { display: none; }
       .reviews-section a.btn-green { padding: 8px 18px; font-size: 0.7rem; margin-top: 0; }
       footer { padding: 24px 0 16px; }
       .foot-grid {
@@ -794,12 +797,61 @@
         </div>
         <p class="review-text">"Decent no hassle friendly bloke. One test drive later, we now have a decent little runaround which wasn't overpriced and absolutely spotless. Well recommended."</p>
       </div>
+      <div class="review-card is-hidden">
+        <div class="review-top">
+          <img src="https://ui-avatars.com/api/?name=Sunil+Kumar&background=2D6B16&color=fff&size=128&bold=true" alt="Sunil Kumar" class="review-avatar">
+          <div>
+            <div class="review-name">Sunil Kumar</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <span class="review-time">a year ago</span>
+        </div>
+        <p class="review-text">"From start to finish the whole process was seamless. At no point did we feel uncomfortable or pushed into anything. Would 100% recommend — fantastic service!"</p>
+      </div>
+      <div class="review-card is-hidden">
+        <div class="review-top">
+          <img src="https://ui-avatars.com/api/?name=Michael+Sampson&background=3A8520&color=fff&size=128&bold=true" alt="Michael Sampson" class="review-avatar">
+          <div>
+            <div class="review-name">Michael Sampson</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <span class="review-time">2 years ago</span>
+        </div>
+        <p class="review-text">"Although I travelled 54 miles to view the car it was worth the journey. One on one sale, relaxed environment. Very happy customer and do recommend."</p>
+      </div>
+      <div class="review-card is-hidden">
+        <div class="review-top">
+          <img src="https://ui-avatars.com/api/?name=Meddy+Dey&background=315522&color=fff&size=128&bold=true" alt="Meddy Dey" class="review-avatar">
+          <div>
+            <div class="review-name">Meddy Dey</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <span class="review-time">5 years ago</span>
+        </div>
+        <p class="review-text">"Lucky motors is a genuine dealer, good service and trustworthy. I have bought a few cars over the years using Lucky Motors, I've never been let down. I definitely recommend you."</p>
+      </div>
+    </div>
+    <div class="reviews-more-wrap">
+      <button class="btn-green" id="reviews-more-btn">Show More Reviews</button>
     </div>
     <div style="text-align:center;margin-top:16px;">
       <a href="https://www.google.com/maps/place/?q=place_id:ChIJb9T6T0Xxd0gRXm6NXv8kf7U" target="_blank" class="btn-green">See All 33 Reviews on Google</a>
     </div>
   </div>
 </section>
+
+<script>
+  (function () {
+    var moreBtn = document.getElementById('reviews-more-btn');
+    var hidden = document.querySelectorAll('.review-card.is-hidden');
+    var expanded = false;
+    moreBtn.addEventListener('click', function () {
+      expanded = !expanded;
+      hidden.forEach(function (el) { el.classList.toggle('is-hidden', !expanded); });
+      moreBtn.textContent = expanded ? 'Show Less' : 'Show More Reviews';
+    });
+  })();
+</script>
 
 <!-- FOOTER -->
 <footer>
