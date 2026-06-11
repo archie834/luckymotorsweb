@@ -363,11 +363,18 @@
         });
 
         if (vehicles.length > INITIAL_COUNT) {
-          moreBtn.textContent = 'Show All ' + vehicles.length + ' Cars';
+          var expanded = false;
+          var showMoreText = 'Show All ' + vehicles.length + ' Cars';
+          var showLessText = 'Show Less';
+          moreBtn.textContent = showMoreText;
           moreBtn.style.display = 'inline-block';
           moreBtn.addEventListener('click', function () {
-            grid.querySelectorAll('.is-hidden').forEach(function (el) { el.classList.remove('is-hidden'); });
-            moreBtn.style.display = 'none';
+            expanded = !expanded;
+            grid.querySelectorAll('.vehicle-card').forEach(function (el, i) {
+              if (i >= INITIAL_COUNT) el.classList.toggle('is-hidden', !expanded);
+            });
+            moreBtn.textContent = expanded ? showLessText : showMoreText;
+            if (!expanded) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
           });
         }
       })
