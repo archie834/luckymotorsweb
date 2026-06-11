@@ -12,6 +12,7 @@
       --green:      #2D6B16;
       --green-dark: #1A4209;
       --green-mid:  #3A8520;
+      --orange:     #F2640C;
       --charcoal:   #2D2D2D;
       --off:        #F5F7F4;
       --border:     #DDE5D8;
@@ -22,8 +23,8 @@
     /* NAV */
     nav { background: var(--green-dark); position: sticky; top: 0; z-index: 100; border-bottom: 3px solid var(--green-mid); }
     .nav-inner { max-width: 100%; padding: 0 20px 0 16px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
-    .nav-logo { padding-left: 0; }
-    .nav-logo img { height: 68px; width: auto; display: block; }
+    .nav-logo { background: #fff; border-radius: 10px; padding: 8px 14px; display: inline-flex; align-items: center; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .nav-logo img { height: 52px; width: auto; display: block; }
     .nav-links { display: flex; gap: 28px; }
     .nav-links a { font-size: 0.82rem; font-weight: 700; color: rgba(255,255,255,0.75); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.15s; }
     .nav-links a:hover { color: #fff; }
@@ -32,7 +33,13 @@
     .nav-phone svg { flex-shrink: 0; }
 
     /* HERO */
-    .hero { position: relative; height: 55vh; min-height: 360px; overflow: hidden; }
+    .hero { position: relative; height: 65vh; min-height: 440px; overflow: hidden; }
+    .hero-socials { position: absolute; top: 24px; right: 28px; z-index: 2; display: flex; align-items: center; gap: 12px; }
+    .hero-socials-label { color: #fff; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; text-shadow: 0 1px 6px rgba(0,0,0,0.5); }
+    .hero-socials .social-btn { width: 44px; height: 44px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; color: var(--green-dark); box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: background 0.15s, transform 0.15s, color 0.15s; }
+    .hero-socials .social-btn:hover { background: var(--off); transform: translateY(-2px); }
+    .hero-socials .social-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .hero-socials .social-btn:active { transform: translateY(0); }
     .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
     .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.15) 100%); }
     .hero-content { position: absolute; inset: 0; display: flex; align-items: flex-end; }
@@ -41,6 +48,13 @@
     .hero-content h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 7vw, 6rem); color: #fff; line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 8px; }
     .hero-content h1 span { color: #fff; }
     .hero-sub { font-size: 1rem; color: rgba(255,255,255,0.65); margin-bottom: 28px; font-weight: 500; }
+    .stat-strip-wrap { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+    .stat-strip { margin-top: -44px; position: relative; z-index: 3; background: #fff; border-radius: 14px; box-shadow: 0 20px 50px rgba(26,66,9,0.18), 0 6px 16px rgba(0,0,0,0.1); display: grid; grid-template-columns: repeat(4, 1fr); }
+    .stat { padding: 28px 16px; text-align: center; border-right: 1px solid var(--border); }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-family: 'Bebas Neue', sans-serif; font-size: 2.4rem; color: var(--green-dark); line-height: 1; letter-spacing: 0.02em; }
+    .stat-num-sm { font-size: 1.5rem; }
+    .stat-label { font-size: 0.72rem; color: #888; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 6px; }
     .btn-green { background: var(--green); color: #fff; padding: 14px 32px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; border: none; cursor: pointer; }
     .btn-green:hover { background: var(--green-mid); transform: translateY(-2px); }
     .btn-white { background: #fff; color: var(--green-dark); padding: 14px 32px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; border: none; cursor: pointer; }
@@ -49,43 +63,38 @@
     /* SECTION WRAPPER */
     .wrap { max-width: 1180px; margin: 0 auto; padding: 0 28px; }
 
-    /* CARS */
-    .cars-section { padding: 70px 0; background: #fff; }
-    .sec-header { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 36px; }
-    .sec-label { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; color: var(--green-dark); letter-spacing: 0.04em; }
-    .sec-link { font-size: 0.82rem; font-weight: 700; color: var(--green); text-decoration: none; letter-spacing: 0.04em; text-transform: uppercase; }
-    .sec-link:hover { color: var(--orange); }
+    /* STOCK */
+    .stock-section { padding: 60px 0; background: #fff; }
+    .stock-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 32px; }
+    .stock-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; }
+    .stock-header h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.4rem, 4.5vw, 3.6rem); color: var(--green-dark); letter-spacing: 0.02em; line-height: 0.95; margin-bottom: 8px; }
+    .stock-sub { font-size: 0.92rem; color: #6B7280; line-height: 1.65; max-width: 460px; }
+    .btn-orange { background: var(--orange); color: #fff; padding: 14px 32px; border-radius: 6px; font-size: 0.88rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; display: inline-block; transition: background 0.15s, transform 0.15s; border: none; cursor: pointer; white-space: nowrap; }
+    .btn-orange:hover { background: #ff7e2e; transform: translateY(-2px); }
+    .btn-orange:focus-visible { outline: 2px solid var(--green-dark); outline-offset: 3px; }
+    .btn-orange:active { transform: translateY(0); }
 
-    /* FILTERS */
-    .filters { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
-    .filter { padding: 7px 18px; border-radius: 100px; border: 1.5px solid var(--border); background: #fff; color: #888; font-size: 0.78rem; font-weight: 600; cursor: pointer; letter-spacing: 0.04em; text-transform: uppercase; transition: all 0.15s; font-family: 'Montserrat', sans-serif; }
-    .filter:hover { border-color: var(--green); color: var(--green); }
-    .car-card.hidden { display: none; }
-    .show-more-wrap { text-align: center; margin-top: 36px; }
-    .btn-show-more { background: #fff; border: 2px solid var(--green-dark); color: var(--green-dark); padding: 13px 36px; border-radius: 6px; font-size: 0.85rem; font-weight: 700; cursor: pointer; font-family: 'Montserrat', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; transition: background 0.15s, color 0.15s, transform 0.15s; display: inline-flex; align-items: center; gap: 8px; }
-    .btn-show-more:hover { background: var(--green-dark); color: #fff; transform: translateY(-2px); }
-    .filter.on { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
-
-    /* CAR GRID */
-    .car-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-    .car-card { border: 1.5px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; transition: box-shadow 0.2s, transform 0.2s; }
-    .car-card:hover { box-shadow: 0 16px 40px rgba(45,107,22,0.13), 0 4px 12px rgba(0,0,0,0.06); transform: translateY(-4px); }
-    .car-card:hover .car-photo img { transform: scale(1.05); }
-    .car-photo { overflow: hidden; position: relative; }
-    .car-photo img { width: 100%; height: 195px; object-fit: cover; display: block; transition: transform 0.4s ease; }
-    .car-badge { position: absolute; top: 10px; left: 10px; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.08em; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
-    .b-green { background: var(--green); color: #fff; }
-    .b-white { background: #fff; color: var(--green-dark); }
-    .b-red { background: #D63030; color: #fff; }
-    .car-body { padding: 16px 18px 18px; }
-    .car-make { font-size: 0.68rem; color: #9CA3AF; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 3px; }
-    .car-name { font-family: 'Montserrat', sans-serif; font-size: 0.95rem; font-weight: 700; color: var(--charcoal); margin-bottom: 10px; line-height: 1.35; }
-    .car-meta { display: flex; gap: 14px; font-size: 0.76rem; color: #9CA3AF; font-weight: 500; margin-bottom: 14px; }
-    .car-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1.5px solid var(--border); }
-    .car-price { font-family: 'Bebas Neue', sans-serif; font-size: 1.7rem; color: var(--green-dark); letter-spacing: 0.02em; line-height: 1; }
-    .car-price small { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 500; color: #9CA3AF; display: block; letter-spacing: 0; }
-    .car-btn { background: var(--off); border: 1.5px solid var(--border); color: var(--charcoal); padding: 8px 16px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none; font-family: 'Montserrat', sans-serif; letter-spacing: 0.04em; text-transform: uppercase; transition: background 0.15s, border-color 0.15s, color 0.15s; }
-    .car-btn:hover { background: var(--green-dark); color: #fff; border-color: var(--green-dark); }
+    /* STOCK GRID */
+    .stock-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .stock-grid.is-loading { grid-template-columns: repeat(3, 1fr); }
+    .vehicle-card { background: #fff; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; text-decoration: none; color: inherit; box-shadow: 0 2px 10px rgba(26,66,9,0.05); transition: transform 0.2s, box-shadow 0.2s; }
+    .vehicle-card:hover { transform: translateY(-5px); box-shadow: 0 20px 44px rgba(26,66,9,0.16), 0 6px 16px rgba(0,0,0,0.08); }
+    .vehicle-card:focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+    .vehicle-card.is-hidden { display: none; }
+    .vehicle-img-wrap { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--off); }
+    .vehicle-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.35s; }
+    .vehicle-card:hover .vehicle-img-wrap img { transform: scale(1.05); }
+    .vehicle-img-wrap::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 35%); }
+    .vehicle-price { position: absolute; bottom: 10px; left: 12px; z-index: 2; font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.02em; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+    .vehicle-body { padding: 16px 18px 18px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+    .vehicle-title { font-size: 0.86rem; font-weight: 700; color: var(--charcoal); line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .vehicle-specs { display: flex; flex-wrap: wrap; gap: 5px 10px; font-size: 0.7rem; color: #999; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+    .vehicle-specs span { position: relative; }
+    .vehicle-specs span:not(:last-child)::after { content: '\2022'; position: absolute; right: -8px; color: var(--border); }
+    .vehicle-link { margin-top: auto; padding-top: 4px; font-size: 0.78rem; font-weight: 700; color: var(--green); display: inline-flex; align-items: center; gap: 6px; transition: gap 0.15s, color 0.15s; }
+    .vehicle-card:hover .vehicle-link { gap: 10px; color: var(--green-mid); }
+    .stock-more-wrap { display: flex; justify-content: center; margin-top: 32px; }
+    .stock-empty { text-align: center; color: #999; font-size: 0.9rem; padding: 40px 0; grid-column: 1 / -1; }
 
     /* DIVIDER */
     .divider { height: 4px; background: linear-gradient(to right, var(--green-dark), var(--green-mid), var(--orange)); }
@@ -116,13 +125,15 @@
     .btn-aircon:hover { background: #93d872; transform: translateY(-2px); }
 
     /* ECU REMAP */
-    .ecu-section { padding: 70px 0; background: var(--off); }
-    .ecu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    .ecu-section { padding: 70px 0 30px; background: var(--off); }
+    .ecu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; position: relative; }
+    .ecu-photo-card { position: absolute; top: -56px; right: -8px; width: 130px; aspect-ratio: 1103 / 1426; border-radius: 12px; border: 4px solid #fff; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15); z-index: 5; }
+    .ecu-photo-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .ecu-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
-    .ecu-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); color: var(--charcoal); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 16px; }
+    .ecu-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); color: var(--green-dark); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 16px; }
     .ecu-heading span { color: var(--green-dark); }
-    .ecu-desc { font-size: 0.9rem; color: #6B7280; line-height: 1.75; margin-bottom: 28px; }
-    .ecu-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 32px; }
+    .ecu-desc { font-size: 0.9rem; color: #6B7280; line-height: 1.75; margin-bottom: 24px; }
+    .ecu-benefits { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
     .ecu-benefit { display: flex; align-items: center; gap: 10px; font-size: 0.82rem; color: var(--text); font-weight: 600; }
     .ecu-tick { width: 20px; height: 20px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .ecu-price-block { background: var(--green-mid); border-radius: 12px; padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
@@ -132,7 +143,7 @@
     .ecu-img { width: 100%; border-radius: 12px; display: block; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
 
     /* REVIEWS */
-    .reviews-section { background: var(--off); padding: 64px 0; }
+    .reviews-section { background: var(--off); padding: 30px 0 64px; }
     .reviews-header { text-align: center; margin-bottom: 40px; }
     .reviews-score { display: inline-flex; align-items: center; gap: 20px; background: #fff; border-radius: 12px; padding: 20px 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
     .reviews-num { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--green-dark); line-height: 1; }
@@ -151,30 +162,55 @@
     @media(max-width:580px) { .reviews-grid { grid-template-columns: 1fr; } .reviews-score { flex-wrap: wrap; justify-content: center; text-align: center; } }
 
     /* FOOTER */
-    footer { background: var(--green-dark); border-top: 3px solid var(--orange); padding: 40px 0 28px; }
+    footer { background: var(--green-dark); border-top: 3px solid #fff; padding: 40px 0 28px; }
     .foot-grid { display: grid; grid-template-columns: auto 1fr auto; gap: 48px; align-items: center; margin-bottom: 28px; }
-    .foot-logo img { height: 60px; width: auto; display: block; filter: brightness(0) invert(1); }
-    .foot-contact { display: flex; flex-direction: column; gap: 6px; }
+    .foot-logo { background: #fff; border-radius: 10px; padding: 10px 16px; display: inline-flex; align-items: center; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .foot-logo img { height: 60px; width: auto; display: block; }
+    .foot-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
     .foot-contact a, .foot-contact span { font-size: 0.85rem; color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.15s; font-weight: 500; }
-    .foot-contact a:hover { color: var(--orange); }
+    .foot-contact a:hover { color: #fff; text-decoration: underline; }
     .foot-contact strong { color: #fff; }
+    .foot-email { font-size: 1.38rem; font-weight: 700; color: #fff; }
+    .foot-email:hover { color: #fff; text-decoration: underline; }
+    .foot-contact .foot-address { display: flex; align-items: flex-start; gap: 8px; font-size: 0.98rem; color: #fff; }
+    .foot-address svg { flex-shrink: 0; margin-top: 3px; color: #fff; }
+    .foot-hours { display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 14px; }
+    .foot-hours svg { color: #fff; flex-shrink: 0; }
+    .foot-hours-text { display: flex; flex-direction: column; line-height: 1.35; }
+    .foot-hours-text strong { font-size: 0.8rem; color: #fff; }
+    .foot-hours-text span { font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+    .foot-social { display: flex; gap: 10px; }
+    .foot-contact a.social-btn { width: 44px; height: 44px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; color: var(--green-dark); box-shadow: 0 4px 12px rgba(0,0,0,0.15); transition: background 0.15s, transform 0.15s, color 0.15s; }
+    .social-btn svg { width: 20px; height: 20px; }
+    .foot-contact a.social-btn:hover { background: var(--off); color: var(--green-dark); transform: translateY(-2px); }
+    .social-btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+    .social-btn:active { transform: translateY(0); }
     .foot-tagline { text-align: right; }
     .foot-tagline p { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; color: #fff; letter-spacing: 0.05em; line-height: 1; }
-    .foot-tagline p span { color: var(--orange); }
+    .foot-tagline p span { color: #fff; }
     .foot-bottom { padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
     .foot-bottom span { font-size: 0.75rem; color: rgba(255,255,255,0.3); font-weight: 500; }
 
     @media (max-width: 900px) {
-      .car-grid { grid-template-columns: repeat(2, 1fr); }
       .aircon-grid { grid-template-columns: 1fr; gap: 36px; }
       .ecu-grid { grid-template-columns: 1fr; gap: 40px; }
+      .ecu-photo-card { display: none; }
       .foot-grid { grid-template-columns: 1fr; gap: 24px; }
       .foot-tagline { text-align: left; }
+      .stock-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
     }
     @media (max-width: 580px) {
-      .car-grid { grid-template-columns: 1fr; }
+      .stock-section { padding: 32px 0; }
+      .stock-header { margin-bottom: 20px; }
+      .stock-grid { grid-template-columns: 1fr; gap: 14px; }
+      .btn-orange { width: 100%; text-align: center; }
       .nav-links { display: none; }
       .ecu-benefits { grid-template-columns: 1fr; }
+      .stat-strip { margin-top: -28px; border-radius: 10px; }
+      .stat { padding: 12px 4px; }
+      .stat-num { font-size: 1.2rem; }
+      .stat-num-sm { font-size: 0.8rem; }
+      .stat-label { font-size: 0.5rem; letter-spacing: 0.02em; }
     }
   </style>
 </head>
@@ -187,7 +223,7 @@
       <img src="ejcuts/lucky motors logo.png" alt="Lucky Motors Peterborough Ltd">
     </a>
     <div class="nav-links">
-      <a href="#cars">Our Cars</a>
+      <a href="https://showroom.ebaymotorspro.co.uk/lucky-motors" target="_blank">Our Cars</a>
       <a href="#aircon">Air Con</a>
       <a href="#ecu">ECU Remap</a>
     </div>
@@ -202,260 +238,154 @@
 <div class="hero">
   <img src="ejcuts/garage pic.webp" alt="Lucky Motors forecourt">
   <div class="hero-overlay"></div>
+  <div class="hero-socials">
+    <span class="hero-socials-label">Like our socials</span>
+    <a href="https://www.facebook.com/Luckymotors.co.uk/?locale=en_GB" target="_blank" class="social-btn" aria-label="Facebook">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@luckymotors.ltd?is_from_webapp=1&sender_device=pc" target="_blank" class="social-btn" aria-label="TikTok">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-2.9v12.1c0 1.45-1.18 2.65-2.65 2.65a2.65 2.65 0 0 1-2.65-2.65 2.65 2.65 0 0 1 2.65-2.65c.27 0 .53.04.78.11V8.5a5.6 5.6 0 0 0-.78-.06A5.6 5.6 0 0 0 5.4 14.05a5.6 5.6 0 0 0 5.6 5.6 5.6 5.6 0 0 0 5.6-5.6V8.27a7.1 7.1 0 0 0 4.1 1.3V6.6a4.2 4.2 0 0 1-4.2-4.2z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/anis.elabed/" target="_blank" class="social-btn" aria-label="Instagram">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm4.5-3.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
+    </a>
+  </div>
   <div class="hero-content">
     <div class="hero-inner">
       <div class="hero-tag">Lucky Motors Peterborough Ltd</div>
       <h1>THE CHEAPEST<br><span>CARS IN THE UK</span></h1>
-      <p class="hero-sub">Quality used cars &middot; Air con re-gas &middot; ECU remapping â€" all under one roof.</p>
+      <p class="hero-sub">Quality used cars &middot; Air con re-gas &middot; ECU remapping — all under one roof.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
-        <a href="#cars" class="btn-green">Browse Stock</a>
+        <a href="https://showroom.ebaymotorspro.co.uk/lucky-motors" target="_blank" class="btn-green">Browse Stock</a>
         <a href="tel:01733977754" class="btn-white">Call Us Now</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- CARS -->
-<section id="cars" class="cars-section">
+<div class="stat-strip-wrap">
+  <div class="stat-strip">
+    <div class="stat"><div class="stat-num">4.8★</div><div class="stat-label">Google Rating</div></div>
+    <div class="stat"><div class="stat-num stat-num-sm">PRICE MATCH</div><div class="stat-label">Guarantee</div></div>
+    <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Years Trading</div></div>
+    <div class="stat"><div class="stat-num stat-num-sm">SECOND HAND</div><div class="stat-label">Quality Cars</div></div>
+  </div>
+</div>
+
+<!-- STOCK -->
+<section id="stock" class="stock-section">
   <div class="wrap">
-    <div class="sec-header">
-      <div class="sec-label">Current Stock <span style="font-family:’Montserrat’,sans-serif;font-size:0.85rem;font-weight:600;color:#9CA3AF;">&#8212; Live from eBay Motors</span></div>
-      <a href="https://showroom.ebaymotorspro.co.uk/lucky-motors" target="_blank" class="sec-link">View all on eBay &rarr;</a>
+    <div class="stock-header">
+      <div>
+        <div class="stock-eyebrow">Quality Used Cars &middot; Peterborough</div>
+        <h2>Find Your Car Today</h2>
+        <p class="stock-sub">Live prices, mileage and photos &mdash; pulled straight from our eBay showroom and updated automatically.</p>
+      </div>
+      <a href="https://showroom.ebaymotorspro.co.uk/lucky-motors" target="_blank" class="btn-orange">View Full Stock on eBay &rarr;</a>
     </div>
-
-    <div id="car-grid" class="car-grid">
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1xQAAeSwK99qJc3k/$_2.JPG" alt="MINI Cooper S D">
-          <span class="car-badge b-green">New In</span>
-        </div>
-        <div class="car-body">
-          <div class="car-make">2016 &middot; MINI</div>
-          <div class="car-name">Hatchback 2.0 Cooper S D</div>
-          <div class="car-meta"><span>122,992 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;5,995</div>
-            <a href="https://www.ebay.co.uk/itm/198409293158" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/EhYAAeSwKE9qJ8N5/$_2.JPG" alt="Ford S-Max">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2015 &middot; Ford</div>
-          <div class="car-name">S-Max 2.0 TDCi 150 Titanium</div>
-          <div class="car-meta"><span>100,997 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;5,995</div>
-            <a href="https://www.ebay.co.uk/itm/198406561344" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/SJAAAeSwRqNqJ8N5/$_2.JPG" alt="Audi Q5">
-          <span class="car-badge b-white">Hot Deal</span>
-        </div>
-        <div class="car-body">
-          <div class="car-make">2015 &middot; Audi</div>
-          <div class="car-name">Q5 2.0 TDI Quattro S Line</div>
-          <div class="car-meta"><span>135,673 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;5,995</div>
-            <a href="https://www.ebay.co.uk/itm/198399800316" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/0UUAAeSw~itqJ8N3/$_2.JPG" alt="Porsche Cayenne">
-          <span class="car-badge b-white">Hot Deal</span>
-        </div>
-        <div class="car-body">
-          <div class="car-make">2011 &middot; Porsche</div>
-          <div class="car-name">Cayenne Diesel [245]</div>
-          <div class="car-meta"><span>185,725 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;6,395</div>
-            <a href="https://www.ebay.co.uk/itm/198397499578" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1fQAAeSwvMlqJ8N3/$_2.JPG" alt="Audi A5">
-          <span class="car-badge b-green">New In</span>
-        </div>
-        <div class="car-body">
-          <div class="car-make">2017 &middot; Audi</div>
-          <div class="car-name">A5 2.0 TDI Quattro Sport</div>
-          <div class="car-meta"><span>132,987 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;8,495</div>
-            <a href="https://www.ebay.co.uk/itm/198359551428" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/LZMAAeSwYj9qJ8N7/$_2.JPG" alt="Ford Fiesta">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2016 &middot; Ford</div>
-          <div class="car-name">Fiesta 1.0 EcoBoost Zetec</div>
-          <div class="car-meta"><span>113,383 mi</span><span>Petrol</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,695</div>
-            <a href="https://www.ebay.co.uk/itm/198399824533" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ANoAAeSw3z9qH8dl/$_2.JPG" alt="Mercedes B Class">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2013 &middot; Mercedes-Benz</div>
-          <div class="car-name">B Class B200 CDI</div>
-          <div class="car-meta"><span>140,903 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,995</div>
-            <a href="https://www.ebay.co.uk/itm/198387608673" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/rv4AAeSwoC9qJl-q/$_2.JPG" alt="Ford Mondeo">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2015 &middot; Ford</div>
-          <div class="car-name">Mondeo 2.0 TDCi ECOnetic</div>
-          <div class="car-meta"><span>125,815 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;3,395</div>
-            <a href="https://www.ebay.co.uk/itm/198387588796" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/QnwAAeSwE-FqHnKf/$_2.JPG" alt="MINI Paceman">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2014 &middot; MINI</div>
-          <div class="car-name">Paceman 1.6 Cooper D</div>
-          <div class="car-meta"><span>120,618 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,595</div>
-            <a href="https://www.ebay.co.uk/itm/198368198297" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/~loAAeSwDe5qJl-p/$_2.JPG" alt="MINI One D">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2015 &middot; MINI</div>
-          <div class="car-name">Hatchback 1.5 One D</div>
-          <div class="car-meta"><span>108,604 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;3,494</div>
-            <a href="https://www.ebay.co.uk/itm/198364078055" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/1KAAAeSwOqpqJ8N6/$_2.JPG" alt="VW Caddy">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2015 &middot; Volkswagen</div>
-          <div class="car-name">Caddy 1.6 TDI Startline Van</div>
-          <div class="car-meta"><span>121,279 mi</span><span>Diesel</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;3,595</div>
-            <a href="https://www.ebay.co.uk/itm/198357132205" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/n4UAAeSwBspqEpSb/$_2.JPG" alt="Fiat 500">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2016 &middot; Fiat</div>
-          <div class="car-name">500 1.2 Pop Star 3dr</div>
-          <div class="car-meta"><span>110,645 mi</span><span>Petrol</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,800</div>
-            <a href="https://www.ebay.co.uk/itm/198345680075" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hXoAAeSwv4RqHnKd/$_2.JPG" alt="Smart ForTwo">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2018 &middot; Smart</div>
-          <div class="car-name">ForTwo Coupe 1.0 Passion</div>
-          <div class="car-meta"><span>118,996 mi</span><span>Petrol</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,750</div>
-            <a href="https://www.ebay.co.uk/itm/198345664530" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="car-card" style="display:none">
-        <div class="car-photo">
-          <img src="https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/AZwAAeSwHClqJQ~F/$_2.JPG" alt="Vauxhall Adam">
-        </div>
-        <div class="car-body">
-          <div class="car-make">2013 &middot; Vauxhall</div>
-          <div class="car-name">Adam 1.4i Jam 3dr</div>
-          <div class="car-meta"><span>95,738 mi</span><span>Petrol</span></div>
-          <div class="car-foot">
-            <div class="car-price">&pound;2,895</div>
-            <a href="https://www.ebay.co.uk/itm/198340001302" target="_blank" class="car-btn">View on eBay</a>
-          </div>
-        </div>
-      </div>
-
+    <div class="stock-grid" id="stock-grid">
+      <div class="stock-empty">Loading our latest stock&hellip;</div>
     </div>
-
-    <div class="show-more-wrap" id="showMoreWrap">
-      <button class="btn-show-more" id="showMoreBtn" onclick="toggleCars()">
-        <span id="showMoreLabel">Show All 14 Cars</span>
-        <svg id="showMoreIcon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M7 10l5 5 5-5z"/></svg>
-      </button>
+    <div class="stock-more-wrap">
+      <button class="btn-green" id="stock-more-btn" style="display:none;"></button>
     </div>
-
   </div>
 </section>
+
+<script>
+  (function () {
+    var grid = document.getElementById('stock-grid');
+    var moreBtn = document.getElementById('stock-more-btn');
+    var INITIAL_COUNT = 6;
+
+    fetch('stock.json', { cache: 'no-store' })
+      .then(function (res) { if (!res.ok) throw new Error('Stock unavailable'); return res.json(); })
+      .then(function (data) {
+        var vehicles = (data && data.vehicles) || [];
+        grid.innerHTML = '';
+
+        if (!vehicles.length) {
+          var empty = document.createElement('div');
+          empty.className = 'stock-empty';
+          empty.textContent = 'New stock coming soon — check our eBay showroom for the latest cars.';
+          grid.appendChild(empty);
+          return;
+        }
+
+        vehicles.forEach(function (v, i) {
+          var card = document.createElement('a');
+          card.className = 'vehicle-card' + (i >= INITIAL_COUNT ? ' is-hidden' : '');
+          card.href = v.link;
+          card.target = '_blank';
+          card.rel = 'noopener';
+
+          var imgWrap = document.createElement('div');
+          imgWrap.className = 'vehicle-img-wrap';
+
+          var img = document.createElement('img');
+          img.src = v.image;
+          img.alt = v.title;
+          img.loading = 'lazy';
+
+          var price = document.createElement('div');
+          price.className = 'vehicle-price';
+          price.textContent = (v.price || '').replace(/\.00$/, '');
+
+          imgWrap.appendChild(img);
+          imgWrap.appendChild(price);
+
+          var body = document.createElement('div');
+          body.className = 'vehicle-body';
+
+          var title = document.createElement('h3');
+          title.className = 'vehicle-title';
+          title.textContent = v.title;
+
+          var specs = document.createElement('div');
+          specs.className = 'vehicle-specs';
+          (v.details || []).slice(0, 3).forEach(function (d) {
+            var span = document.createElement('span');
+            span.textContent = d;
+            specs.appendChild(span);
+          });
+
+          var link = document.createElement('span');
+          link.className = 'vehicle-link';
+          link.textContent = 'View Listing →';
+
+          body.appendChild(title);
+          body.appendChild(specs);
+          body.appendChild(link);
+
+          card.appendChild(imgWrap);
+          card.appendChild(body);
+          grid.appendChild(card);
+        });
+
+        if (vehicles.length > INITIAL_COUNT) {
+          moreBtn.textContent = 'Show All ' + vehicles.length + ' Cars';
+          moreBtn.style.display = 'inline-block';
+          moreBtn.addEventListener('click', function () {
+            grid.querySelectorAll('.is-hidden').forEach(function (el) { el.classList.remove('is-hidden'); });
+            moreBtn.style.display = 'none';
+          });
+        }
+      })
+      .catch(function () {
+        grid.innerHTML = '';
+        var empty = document.createElement('div');
+        empty.className = 'stock-empty';
+        empty.textContent = 'Stock listing temporarily unavailable — please view our eBay showroom above.';
+        grid.appendChild(empty);
+      });
+  })();
+</script>
 
 <div class="divider"></div>
 
 <!-- AIR CON -->
 <section id="aircon" class="aircon-section" style="padding:0;">
-  <img src="ejcuts/air con add.PNG" alt="Lucky Motors Air Con Re-Gas â€" All Makes &amp; Models" style="width:100%;display:block;">
+  <img src="ejcuts/air con add.PNG" alt="Lucky Motors Air Con Re-Gas — All Makes &amp; Models" style="width:100%;display:block;">
 </section>
 
 <div class="divider"></div>
@@ -467,17 +397,20 @@
       <div>
         <img src="ejcuts/ecu remaping.JPG" alt="ECU Remapping Services" class="ecu-img">
       </div>
+      <div class="ecu-photo-card">
+        <img src="ejcuts/carplay image.png" alt="In-car infotainment display">
+      </div>
       <div>
         <div class="ecu-eyebrow">Performance Tuning</div>
         <div class="ecu-heading">ECU REMAPPING<br><span>&amp; CAR CODING</span></div>
-        <p class="ecu-desc">If your car feels a bit flat or you're finding it burns through fuel quicker than it should, there's a good chance the factory settings are holding it back. Here at Lucky Motors we plug directly into your ECU and rewrite the map to suit your engine properly â€" not some generic file downloaded off the internet. Most customers notice the difference straight away: better throttle response, more pull when you need it, and usually a decent saving at the pump on longer runs. We cover standard performance remaps as well as DPF solutions, EGR calibration, gearbox tuning, injector coding and more. Give us a call and we'll tell you exactly what we can do for your car.</p>
+        <p class="ecu-desc">At Lucky Motors, we specialise in ECU remapping, car coding, and Apple CarPlay installation for all makes and models. Whether you're looking for improved performance, better fuel efficiency, key programming, dashboard and module coding, or a seamless Apple CarPlay upgrade, our expert team has you covered.</p>
         <div class="ecu-benefits">
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Increased performance</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Key &amp; remote coding</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Improved fuel economy</div>
-          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Rev limiter adjustments</div>
-          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Safe &amp; detailed tuning</div>
-          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>All makes &amp; models</div>
-          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>100% safe &amp; reliable</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Dashboard &amp; mileage correction</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>DPF, EGR &amp; gearbox tuning</div>
+          <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Module &amp; diagnostic coding</div>
         </div>
         <div class="ecu-price-block">
           <div>
@@ -488,7 +421,6 @@
             <div style="font-family:'Bebas Neue',sans-serif;font-size:2.4rem;color:#fff;line-height:1.1;letter-spacing:0.03em;">Call to book<br>your car in</div>
           </div>
         </div>
-        <a href="tel:01733977754" class="btn-green">Call to Book In</a>
       </div>
     </div>
   </div>
@@ -501,7 +433,7 @@
       <div class="reviews-score">
         <div class="reviews-num">4.8</div>
         <div>
-          <div class="reviews-stars">â˜…â˜…â˜…â˜…â˜…</div>
+          <div class="reviews-stars">★★★★★</div>
           <div class="reviews-count">Based on 33 Google Reviews</div>
         </div>
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
@@ -510,10 +442,10 @@
     <div class="reviews-grid">
       <div class="review-card">
         <div class="review-top">
-          <img src="https://lh3.googleusercontent.com/a/ACg8ocLJ6TVQiDmR1u_WIDk-B-8tjBg_RTJyFSLSTHgWRRqXYwAxAQ=s128-c0x00000000-cc-rp-mo" alt="Darius Hooper" class="review-avatar">
+          <img src="https://ui-avatars.com/api/?name=Darius+Hooper&background=2D6B16&color=fff&size=128&bold=true" alt="Darius Hooper" class="review-avatar">
           <div>
             <div class="review-name">Darius Hooper</div>
-            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+            <div class="review-stars">★★★★★</div>
           </div>
           <span class="review-time">6 months ago</span>
         </div>
@@ -521,10 +453,10 @@
       </div>
       <div class="review-card">
         <div class="review-top">
-          <img src="https://lh3.googleusercontent.com/a/ACg8ocImKLTWt2ews_b1yw2qPjyQl0jje-7aL-vtgcoyp_DPTQ3W7w=s128-c0x00000000-cc-rp-mo" alt="sam langridge" class="review-avatar">
+          <img src="https://ui-avatars.com/api/?name=Sam+Langridge&background=3A8520&color=fff&size=128&bold=true" alt="Sam Langridge" class="review-avatar">
           <div>
             <div class="review-name">Sam Langridge</div>
-            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+            <div class="review-stars">★★★★★</div>
           </div>
           <span class="review-time">6 months ago</span>
         </div>
@@ -532,10 +464,10 @@
       </div>
       <div class="review-card">
         <div class="review-top">
-          <img src="https://lh3.googleusercontent.com/a/ACg8ocL4D5Bxn18rKQquCmJn_cXlM_f0fB2okmQi6rHD1gtF9zN4KA=s128-c0x00000000-cc-rp-mo" alt="Kev Foxcroft" class="review-avatar">
+          <img src="https://ui-avatars.com/api/?name=Kev+Foxcroft&background=1A4209&color=fff&size=128&bold=true" alt="Kev Foxcroft" class="review-avatar">
           <div>
             <div class="review-name">Kev Foxcroft</div>
-            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+            <div class="review-stars">★★★★★</div>
           </div>
           <span class="review-time">a year ago</span>
         </div>
@@ -543,25 +475,36 @@
       </div>
       <div class="review-card">
         <div class="review-top">
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjVuYQUTGXOn_9sj4t0W-mul8AnZVwVM5gq_XeN-Ui58mgyiY9WL=s128-c0x00000000-cc-rp-mo-ba2" alt="Sunil Kumar" class="review-avatar">
+          <img src="https://ui-avatars.com/api/?name=Sunil+Kumar&background=2D6B16&color=fff&size=128&bold=true" alt="Sunil Kumar" class="review-avatar">
           <div>
             <div class="review-name">Sunil Kumar</div>
-            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+            <div class="review-stars">★★★★★</div>
           </div>
           <span class="review-time">a year ago</span>
         </div>
-        <p class="review-text">"From start to finish the whole process was seamless. At no point did we feel uncomfortable or pushed into anything. Would 100% recommend â€" fantastic service!"</p>
+        <p class="review-text">"From start to finish the whole process was seamless. At no point did we feel uncomfortable or pushed into anything. Would 100% recommend — fantastic service!"</p>
       </div>
       <div class="review-card">
         <div class="review-top">
-          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW3XzArIvelSy7LDUjoM1NGvRWSs2-WKp_OkCyBNlwwYxSH6cY=s128-c0x00000000-cc-rp-mo-ba4" alt="Michael Sampson" class="review-avatar">
+          <img src="https://ui-avatars.com/api/?name=Michael+Sampson&background=3A8520&color=fff&size=128&bold=true" alt="Michael Sampson" class="review-avatar">
           <div>
             <div class="review-name">Michael Sampson</div>
-            <div class="review-stars">â˜…â˜…â˜…â˜…â˜…</div>
+            <div class="review-stars">★★★★★</div>
           </div>
           <span class="review-time">2 years ago</span>
         </div>
         <p class="review-text">"Although I travelled 54 miles to view the car it was worth the journey. One on one sale, relaxed environment. Very happy customer and do recommend."</p>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <img src="https://ui-avatars.com/api/?name=Meddy+Dey&background=1A4209&color=fff&size=128&bold=true" alt="Meddy Dey" class="review-avatar">
+          <div>
+            <div class="review-name">Meddy Dey</div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <span class="review-time">5 years ago</span>
+        </div>
+        <p class="review-text">"Lucky motors is a genuine dealer, good service and trustworthy. I have bought a few cars over the years using Lucky Motors, I've never been let down. I definitely recommend you."</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px;">
@@ -578,35 +521,43 @@
         <img src="ejcuts/lucky motors logo.png" alt="Lucky Motors">
       </div>
       <div class="foot-contact">
-        <a href="tel:01733977754"><strong>01733 977754</strong></a>
-        <a href="mailto:anis20045@msn.com">anis20045@msn.com</a>
-        <span>Unit 1, Wareley Road, Peterborough, PE2 9PF</span>
-        <span>Open 7 days a week &middot; 9am â€" 6pm</span>
-        <a href="https://www.facebook.com" target="_blank">Facebook â€" Lucky Motors Peterborough Ltd</a>
+        <a href="mailto:anis20045@msn.com" class="foot-email">anis20045@msn.com</a>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJb9T6T0Xxd0gRXm6NXv8kf7U" target="_blank" class="foot-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          <span>Unit 1, Wareley Road, Peterborough, PE2 9PF</span>
+        </a>
+        <div class="foot-hours">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M11.99,2C6.47,2,2,6.48,2,12s4.47,10,9.99,10C17.52,22,22,17.52,22,12S17.52,2,11.99,2z M12,20c-4.42,0-8-3.58-8-8s3.58-8,8-8s8,3.58,8,8S16.42,20,12,20z M12.5,7H11v6l5.25,3.15l0.75-1.23l-4.5-2.67V7z"/></svg>
+          <div class="foot-hours-text">
+            <strong>Open 7 Days a Week</strong>
+            <span>9:00am &ndash; 6:00pm</span>
+          </div>
+        </div>
+        <div class="foot-social">
+          <a href="https://www.facebook.com/Luckymotors.co.uk/?locale=en_GB" target="_blank" class="social-btn" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3l-.5 3H13v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@luckymotors.ltd?is_from_webapp=1&sender_device=pc" target="_blank" class="social-btn" aria-label="TikTok">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-2.9v12.1c0 1.45-1.18 2.65-2.65 2.65a2.65 2.65 0 0 1-2.65-2.65 2.65 2.65 0 0 1 2.65-2.65c.27 0 .53.04.78.11V8.5a5.6 5.6 0 0 0-.78-.06A5.6 5.6 0 0 0 5.4 14.05a5.6 5.6 0 0 0 5.6 5.6 5.6 5.6 0 0 0 5.6-5.6V8.27a7.1 7.1 0 0 0 4.1 1.3V6.6a4.2 4.2 0 0 1-4.2-4.2z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/anis.elabed/" target="_blank" class="social-btn" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd"><path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.65 0 3 1.35 3 3v10c0 1.65-1.35 3-3 3H7c-1.65 0-3-1.35-3-3V7c0-1.65 1.35-3 3-3h10zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0 2c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm4.5-3.5c-.55 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"/></svg>
+          </a>
+        </div>
       </div>
       <div class="foot-tagline">
         <p>THE CHEAPEST</p>
-        <p><span style="color:var(--orange);">CARS IN THE UK</span></p>
+        <p><span style="color:#fff;">CARS IN THE UK</span></p>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>Â© 2025 Lucky Motors Peterborough Ltd. All rights reserved.</span>
+      <span>© 2025 Lucky Motors Peterborough Ltd. All rights reserved.</span>
       <span>Unit 1, Wareley Road &middot; Peterborough &middot; PE2 9PF</span>
     </div>
   </div>
 </footer>
 
 <script>
-  var expanded = false;
-  function toggleCars() {
-    expanded = !expanded;
-    document.querySelectorAll('#car-grid .car-card').forEach(function(c, i) {
-      if (i >= 6) c.style.display = expanded ? '' : 'none';
-    });
-    document.getElementById('showMoreLabel').textContent = expanded ? 'Show Less' : 'Show All 14 Cars';
-    document.getElementById('showMoreIcon').innerHTML = expanded ? '<path d="M7 14l5-5 5 5z"/>' : '<path d="M7 10l5 5 5-5z"/>';
-  }
-
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
       var t = document.querySelector(a.getAttribute('href'));
