@@ -1,0 +1,24 @@
+# Lucky Motors Peterborough Ltd
+
+> Independent used car dealer in Peterborough, UK, also offering air conditioning re-gas and ECU remapping / car coding services. Rated 4.8/5 from 33 Google reviews.
+
+## Business Details
+- Address: Unit 1, Wareley Road, Peterborough, PE2 9PF, United Kingdom
+- Phone: 01733 977754
+- Email: anis20045@msn.com
+- Hours: Open 7 days a week, 9:00am – 6:00pm
+- Google Maps: https://www.google.com/maps/place/?q=place_id:ChIJb9T6T0Xxd0gRXm6NXv8kf7U
+
+## Services
+- Used car sales — live stock listed on our eBay showroom, updated automatically
+- Air Con Re-Gas — R134a from £50, R1234yf from £90, all makes and models
+- ECU Remapping & Car Coding — performance tuning, key & remote programming, dashboard & mileage correction, DPF/EGR & gearbox tuning, Apple CarPlay installation
+
+## Pages
+- [Lucky Motors website](https://archie834.github.io/luckymotorsweb/): Homepage with live stock, air con re-gas, ECU remapping, customer reviews and FAQs
+- [Used car stock (eBay showroom)](https://showroom.ebaymotorspro.co.uk/lucky-motors): Live, up-to-date used car listings with prices, mileage and photos
+
+## Social
+- Facebook: https://www.facebook.com/Luckymotors.co.uk/?locale=en_GB
+- TikTok: https://www.tiktok.com/@luckymotors.ltd
+- Instagram: https://www.instagram.com/anis.elabed/
