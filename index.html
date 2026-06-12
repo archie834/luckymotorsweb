@@ -296,9 +296,8 @@
 
     /* ECU REMAP */
     .ecu-section { padding: 70px 0 30px; background: var(--off); }
-    .ecu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: stretch; position: relative; }
-    .ecu-content { display: flex; flex-direction: column; height: 100%; }
-    .ecu-photo-card { flex: 1; align-self: center; aspect-ratio: 1103 / 1426; margin-top: 24px; border-radius: 12px; border: 4px solid #fff; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15); }
+    .ecu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; position: relative; }
+    .ecu-photo-card { position: absolute; top: -56px; right: -8px; width: 130px; aspect-ratio: 1103 / 1426; border-radius: 12px; border: 4px solid #fff; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,0.25), 0 4px 12px rgba(0,0,0,0.15); z-index: 5; }
     .ecu-photo-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .ecu-eyebrow { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
     .ecu-heading { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.8rem, 5vw, 4.5rem); color: var(--green-dark); line-height: 0.95; letter-spacing: 0.02em; margin-bottom: 16px; }
@@ -683,7 +682,10 @@
       <div>
         <img src="ejcuts/ecu remaping.JPG" alt="ECU Remapping Services" class="ecu-img" width="428" height="568">
       </div>
-      <div class="ecu-content">
+      <div class="ecu-photo-card">
+        <img src="ejcuts/carplay image.png" alt="In-car infotainment display" width="1103" height="1426">
+      </div>
+      <div>
         <div class="ecu-eyebrow">Performance Tuning</div>
         <h2 class="ecu-heading">ECU REMAPPING<br><span>&amp; CAR CODING</span></h2>
         <p class="ecu-desc">At Lucky Motors, we specialise in ECU remapping, car coding, and Apple CarPlay installation for all makes and models. Whether you're looking for improved performance, better fuel efficiency, key programming, dashboard and module coding, or a seamless Apple CarPlay upgrade, our expert team has you covered.</p>
@@ -694,9 +696,6 @@
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Dashboard &amp; mileage correction</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Apple CarPlay installation</div>
           <div class="ecu-benefit"><div class="ecu-tick"><svg width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg></div>Module &amp; diagnostic coding</div>
-        </div>
-        <div class="ecu-photo-card">
-          <img src="ejcuts/carplay image.png" alt="In-car infotainment display" width="1103" height="1426">
         </div>
       </div>
     </div>
