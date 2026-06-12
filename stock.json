@@ -1,20 +1,35 @@
 {
-  "updatedAt": "2026-06-11T15:46:38.452Z",
-  "total": 14,
+  "updatedAt": "2026-06-12T20:56:03.794Z",
+  "total": 13,
   "vehicles": [
     {
-      "title": "2016 MINI HATCHBACK 2.0 Cooper S D 5dr Automatic HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198409293158",
-      "price": "£5,995.00",
-      "image": "stock-images/198409293158.jpg",
-      "subtitle": "full service history £20 road tax year automatic",
-      "description": "2016 MINI HATCHBACK 2.0 Cooper S D 5dr Automatic [Media Pack XL] full SERVICE HISTORY...",
+      "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198421205904",
+      "price": "£2,750.00",
+      "image": "stock-images/198421205904.jpg",
+      "subtitle": "full service history",
+      "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
       "details": [
-        "2016",
-        "122,992 Miles",
+        "2013",
+        "95,735 Miles",
         "Hatchback",
-        "1995 ccm",
-        "Red"
+        "1398 ccm",
+        "White"
+      ]
+    },
+    {
+      "title": "2013 Ford Focus 2.0 TDCi 163 Titanium X 5dr Powershift AUTOMATIC  HATCHBACK Dies",
+      "link": "https://www.ebay.co.uk/itm/198419337775",
+      "price": "£3,450.00",
+      "image": "stock-images/198419337775.jpg",
+      "subtitle": "cam belt water pump been replace",
+      "description": "2013 FORD FOCUS 2.0 TDCi 163 Titanium X 5dr Powershift AUTOMATIC High Specification...",
+      "details": [
+        "2013",
+        "138,841 Miles",
+        "Hatchback",
+        "1997 ccm",
+        "Black"
       ]
     },
     {
@@ -153,20 +168,6 @@
       ]
     },
     {
-      "title": "2015 Volkswagen Caddy 1.6 TDI 75PS + Startline Van PANEL VAN Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198357132205",
-      "price": "£3,595.00",
-      "image": "stock-images/198357132205.jpg",
-      "subtitle": "no vat",
-      "description": "2015 VOLKSWAGEN CADDY 1.6 TDI 75PS + Startline Van no vat timing belt plus water...",
-      "details": [
-        "2015",
-        "121,279 Miles",
-        "1598 ccm",
-        "White"
-      ]
-    },
-    {
       "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198345680075",
       "price": "£2,800.00",
@@ -194,21 +195,6 @@
         "Coupe",
         "999 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198340001302",
-      "price": "£2,895.00",
-      "image": "stock-images/198340001302.jpg",
-      "subtitle": "full service history",
-      "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
-      "details": [
-        "2013",
-        "95,738 Miles",
-        "Hatchback",
-        "1398 ccm",
-        "White"
       ]
     }
   ]
