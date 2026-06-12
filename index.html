@@ -601,9 +601,11 @@
           imgWrap.className = 'vehicle-img-wrap';
 
           var img = document.createElement('img');
-          img.src = v.image;
           img.alt = v.title;
           img.loading = 'lazy';
+          img.onerror = function () { this.style.display = 'none'; };
+          if (v.image) img.src = v.image;
+          else img.style.display = 'none';
 
           var price = document.createElement('div');
           price.className = 'vehicle-price';

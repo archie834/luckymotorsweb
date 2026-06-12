@@ -5,11 +5,26 @@ import { Jimp, JimpMime } from 'jimp';
 const BASE_URL = 'https://showroom.ebaymotorspro.co.uk/lucky-motors';
 const IMAGES_DIR = 'stock-images';
 
+async function withRetries(fn, attempts = 3, delayMs = 1500) {
+  let lastErr;
+  for (let i = 0; i < attempts; i++) {
+    try {
+      return await fn();
+    } catch (err) {
+      lastErr = err;
+      if (i < attempts - 1) await new Promise(r => setTimeout(r, delayMs));
+    }
+  }
+  throw lastErr;
+}
+
 async function fetchPage(page) {
   const url = page > 1 ? `${BASE_URL}?page=${page}` : BASE_URL;
-  const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
-  return res.text();
+  return withRetries(async () => {
+    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
+    return res.text();
+  });
 }
 
 function parseItems(html) {
@@ -57,13 +72,15 @@ function getItemId(link) {
 // depend on eBay's image CDN (which some browsers/extensions block).
 async function downloadImage(url, id) {
   const largeUrl = url.replace(/\$_\d+\.JPG$/i, '$_12.JPG');
-  const res = await fetch(largeUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
-  if (!res.ok) throw new Error(`Failed to fetch image ${largeUrl}: ${res.status}`);
-  const buffer = Buffer.from(await res.arrayBuffer());
-  const image = await Jimp.read(buffer);
-  const outPath = path.join(IMAGES_DIR, `${id}.jpg`);
-  fs.writeFileSync(outPath, await image.getBuffer(JimpMime.jpeg, { quality: 80 }));
-  return outPath.replace(/\\/g, '/');
+  return withRetries(async () => {
+    const res = await fetch(largeUrl, { headers: { 'User-Agent': 'Mozilla/5.0' } });
+    if (!res.ok) throw new Error(`Failed to fetch image ${largeUrl}: ${res.status}`);
+    const buffer = Buffer.from(await res.arrayBuffer());
+    const image = await Jimp.read(buffer);
+    const outPath = path.join(IMAGES_DIR, `${id}.jpg`);
+    fs.writeFileSync(outPath, await image.getBuffer(JimpMime.jpeg, { quality: 80 }));
+    return outPath.replace(/\\/g, '/');
+  });
 }
 
 const firstPageHtml = await fetchPage(1);
@@ -81,6 +98,13 @@ if (allItems.length === 0) {
   process.exit(1);
 }
 
+// Guard against partial scrapes (e.g. a mid-pagination fetch failure) wiping
+// out listings that are actually still live on eBay.
+if (total > 0 && allItems.length < total * 0.5) {
+  console.error(`Scraped only ${allItems.length} of ${total} expected vehicles — likely a partial failure. Leaving stock.json untouched.`);
+  process.exit(1);
+}
+
 fs.mkdirSync(IMAGES_DIR, { recursive: true });
 
 const keepFiles = new Set();
@@ -92,6 +116,14 @@ for (const item of allItems) {
     keepFiles.add(path.basename(item.image));
   } catch (err) {
     console.error(`Image download failed for ${id}: ${err.message}`);
+    // Fall back to a previously cached copy rather than showing a broken image
+    const cached = path.join(IMAGES_DIR, `${id}.jpg`);
+    if (fs.existsSync(cached)) {
+      item.image = cached.replace(/\\/g, '/');
+      keepFiles.add(path.basename(item.image));
+    } else {
+      item.image = '';
+    }
   }
 }
 
