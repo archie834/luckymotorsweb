@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-06-15T16:55:46.216Z",
-  "total": 13,
+  "updatedAt": "2026-06-15T20:44:22.034Z",
+  "total": 14,
   "vehicles": [
+    {
+      "title": "2016 Vauxhall Astra 1.4T 16V 150 SRi Nav 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198429010718",
+      "price": "£3,495.00",
+      "image": "stock-images/198429010718.jpg",
+      "subtitle": "full service history",
+      "description": "2016 VAUXHALL ASTRA 1.4T turbo 16V 150 SRi Nav 5dr 1 former keepers, full service...",
+      "details": [
+        "2016",
+        "104,897 Miles",
+        "Hatchback",
+        "1399 ccm",
+        "Silver"
+      ]
+    },
     {
       "title": "2015 MINI HATCHBACK 1.5 One D 5dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198427895127",
