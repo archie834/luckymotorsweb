@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-06-21T19:14:05.398Z",
-  "total": 15,
+  "updatedAt": "2026-06-22T11:33:43.462Z",
+  "total": 16,
   "vehicles": [
+    {
+      "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
+      "link": "https://www.ebay.co.uk/itm/198445591891",
+      "price": "£3,650.00",
+      "image": "stock-images/198445591891.jpg",
+      "subtitle": "full service history cam belt   done",
+      "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
+      "details": [
+        "2015",
+        "160,986 Miles",
+        "Hatchback",
+        "1968 ccm",
+        "Silver"
+      ]
+    },
     {
       "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198443162746",
