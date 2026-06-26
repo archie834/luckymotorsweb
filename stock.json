@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-25T19:45:08.635Z",
+  "updatedAt": "2026-06-26T08:49:35.699Z",
   "total": 16,
   "vehicles": [
     {
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "title": "2015 MINI Hatch 1.5 One D 5dr HATCHBACK Diesel Manual",
+      "title": "2015 MINI HATCHBACK 1.5 One D 5dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198427895127",
       "price": "£3,495.00",
       "image": "stock-images/198427895127.jpg",
@@ -93,11 +93,11 @@
       ]
     },
     {
-      "title": "2018 smart fortwo 1.0 Passion 2dr COUPE Petrol Manual",
+      "title": "2018 smart FORTWO COUPE 1.0 Passion 2dr COUPE Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198426517167",
       "price": "£2,750.00",
       "image": "stock-images/198426517167.jpg",
-      "subtitle": "Black 118996 Miles",
+      "subtitle": "Black, 118,996 Miles",
       "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
       "details": [
         "2018",
@@ -108,7 +108,7 @@
       ]
     },
     {
-      "title": "2014 MINI Hatch 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
+      "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198426492150",
       "price": "£2,995.00",
       "image": "stock-images/198426492150.jpg",
@@ -147,6 +147,7 @@
       "details": [
         "2015",
         "100,997 Miles",
+        "MPV",
         "1997 ccm",
         "Grey"
       ]
@@ -186,11 +187,12 @@
       "link": "https://www.ebay.co.uk/itm/198387608673",
       "price": "£2,995.00",
       "image": "stock-images/198387608673.jpg",
-      "subtitle": "Red 140903 Miles",
+      "subtitle": "Red, 140,903 Miles",
       "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 5dr 5dr SERVICE HISTORY...",
       "details": [
         "2013",
         "140,903 Miles",
+        "MPV",
         "1796 ccm",
         "Red"
       ]
