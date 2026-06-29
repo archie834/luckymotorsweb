@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-28T19:01:38.628Z",
-  "total": 15,
+  "updatedAt": "2026-06-29T10:20:41.808Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2011 Porsche Cayenne Diesel [245] 5dr Tiptronic S ESTATE Diesel Automatic",
@@ -138,21 +138,6 @@
       ]
     },
     {
-      "title": "2015 Ford S-Max 2.0 TDCi 150 Titanium 5dr Powershift MPV Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198406561344",
-      "price": "£5,995.00",
-      "image": "stock-images/198406561344.jpg",
-      "subtitle": "automatic 7 seater",
-      "description": "2015 FORD S-MAX 2.0 TDCi 150 Titanium 5dr Powershift automatic 7 seater new shape...",
-      "details": [
-        "2015",
-        "100,997 Miles",
-        "MPV",
-        "1997 ccm",
-        "Grey"
-      ]
-    },
-    {
       "title": "2016 Ford Fiesta 1.0 EcoBoost Zetec 5dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198399824533",
       "price": "£2,650.00",
@@ -180,21 +165,6 @@
         "Estate",
         "1968 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198387608673",
-      "price": "£2,995.00",
-      "image": "stock-images/198387608673.jpg",
-      "subtitle": "Red, 140,903 Miles",
-      "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 5dr 5dr SERVICE HISTORY...",
-      "details": [
-        "2013",
-        "140,903 Miles",
-        "MPV",
-        "1796 ccm",
-        "Red"
       ]
     },
     {
