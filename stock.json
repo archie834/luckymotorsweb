@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-07-01T09:28:24.727Z",
-  "total": 15,
+  "updatedAt": "2026-07-01T14:10:23.229Z",
+  "total": 14,
   "vehicles": [
+    {
+      "title": "2013 Ford Focus 2.0 TDCi 163 Titanium X 5dr Powershift HATCHBACK Diesel Automati",
+      "link": "https://www.ebay.co.uk/itm/198467394248",
+      "price": "£3,295.00",
+      "image": "stock-images/198467394248.jpg",
+      "subtitle": "cam belt water pump been replace",
+      "description": "2013 FORD FOCUS 2.0 TDCi 163 Titanium X 5dr Powershift AUTOMATIC High Specification...",
+      "details": [
+        "2013",
+        "138,841 Miles",
+        "Hatchback",
+        "1997 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2011 Porsche Cayenne Diesel [245] 5dr Tiptronic S ESTATE Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/198465605444",
@@ -153,21 +168,6 @@
       ]
     },
     {
-      "title": "2013 Ford Focus 2.0 TDCi 163 Titanium X 5dr Powershift AUTOMATIC  HATCHBACK Dies",
-      "link": "https://www.ebay.co.uk/itm/198419337775",
-      "price": "£3,450.00",
-      "image": "stock-images/198419337775.jpg",
-      "subtitle": "cam belt water pump been replace",
-      "description": "2013 FORD FOCUS 2.0 TDCi 163 Titanium X 5dr Powershift AUTOMATIC High Specification...",
-      "details": [
-        "2013",
-        "138,841 Miles",
-        "Hatchback",
-        "1997 ccm",
-        "Black"
-      ]
-    },
-    {
       "title": "2016 Ford Fiesta 1.0 EcoBoost Zetec 5dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198399824533",
       "price": "£2,650.00",
@@ -179,21 +179,6 @@
         "113,383 Miles",
         "Hatchback",
         "998 ccm",
-        "Black"
-      ]
-    },
-    {
-      "title": "2015 Audi Q5 2.0 TDI Quattro S Line Plus 5dr ESTATE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198399800316",
-      "price": "£5,995.00",
-      "image": "stock-images/198399800316.jpg",
-      "subtitle": "service history 2 key",
-      "description": "2015 AUDI Q5 2.0 TDI Quattro S Line Plus 5dr S LINE PLUS service history Cambelt...",
-      "details": [
-        "2015",
-        "135,673 Miles",
-        "Estate",
-        "1968 ccm",
         "Black"
       ]
     },
