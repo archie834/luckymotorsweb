@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-05T13:06:33.118Z",
-  "total": 13,
+  "updatedAt": "2026-07-05T19:00:35.338Z",
+  "total": 12,
   "vehicles": [
     {
       "title": "2015 Ford Mondeo 2.0 TDCi ECOnetic Zetec 5dr HATCHBACK Diesel Manual",
@@ -120,21 +120,6 @@
         "Hatchback",
         "1398 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2015 MINI HATCHBACK 1.5 One D 5dr HATCHBACK Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198427895127",
-      "price": "£3,495.00",
-      "image": "stock-images/198427895127.jpg",
-      "subtitle": "1 owner full Bmw service £20 rd tax 12 month mot",
-      "description": "2015 MINI HATCHBACK 1.5 One D 5 door Only £20 a year road tax In great condition...",
-      "details": [
-        "2015",
-        "108,743 Miles",
-        "Hatchback",
-        "1496 ccm",
-        "Blue"
       ]
     },
     {
