@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-10T09:17:11.471Z",
-  "total": 15,
+  "updatedAt": "2026-07-10T13:57:07.022Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2015 Audi Q5 2.0 TDI Quattro S Line Plus 5dr ESTATE Diesel Manual",
@@ -210,21 +210,6 @@
         "Hatchback",
         "998 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2017 Audi A5 2.0 TDI Quattro Sport 2dr S Tronic automatic CONVERTIBLE  CONVERTIB",
-      "link": "https://www.ebay.co.uk/itm/198359551428",
-      "price": "£8,495.00",
-      "image": "stock-images/198359551428.jpg",
-      "subtitle": "full service history automatic",
-      "description": "2017 AUDI A5 2.0 TDI Quattro Sport 2dr S Tronic CONVERTIBLE AUTOMATIC FULL service...",
-      "details": [
-        "2017",
-        "132,987 Miles",
-        "Convertible",
-        "1968 ccm",
-        "Grey"
       ]
     }
   ]
