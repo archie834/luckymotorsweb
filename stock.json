@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-07-10T19:14:42.893Z",
-  "total": 14,
+  "updatedAt": "2026-07-11T07:39:17.408Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2017 Nissan Leaf 80kW Tekna 30kWh 5dr Auto HATCHBACK Electric Automatic",
+      "link": "https://www.ebay.co.uk/itm/198490368154",
+      "price": "£3,795.00",
+      "image": "stock-images/198490368154.jpg",
+      "subtitle": "battery own 12 month mot no advisory",
+      "description": "2017 NISSAN LEAF 80kW Tekna 30kWh 5dr Automatic battery own drive spot on with no...",
+      "details": [
+        "2017",
+        "86,209 Miles",
+        "Hatchback",
+        "1 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2015 Audi Q5 2.0 TDI Quattro S Line Plus 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198487518222",
