@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-17T13:03:02.112Z",
-  "total": 14,
+  "updatedAt": "2026-07-17T18:52:07.339Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2018 Audi A3 1.0 TFSI SE Technik 5dr HATCHBACK Petrol Manual",
@@ -135,21 +135,6 @@
         "MPV",
         "1997 ccm",
         "Grey"
-      ]
-    },
-    {
-      "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198445591891",
-      "price": "£3,650.00",
-      "image": "stock-images/198445591891.jpg",
-      "subtitle": "full service history cam belt   done",
-      "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
-      "details": [
-        "2015",
-        "160,986 Miles",
-        "Hatchback",
-        "1968 ccm",
-        "Silver"
       ]
     },
     {
