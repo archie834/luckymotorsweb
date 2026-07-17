@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-17T07:51:12.384Z",
-  "total": 15,
+  "updatedAt": "2026-07-17T13:03:02.112Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2018 Audi A3 1.0 TFSI SE Technik 5dr HATCHBACK Petrol Manual",
@@ -90,21 +90,6 @@
         "Hatchback",
         "1242 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2017 Land Rover Range Rover Sport 3.0 SDV6 [354] Hybrid HSE Dynamic 5dr Auto EST",
-      "link": "https://www.ebay.co.uk/itm/198482654259",
-      "price": "£11,995.00",
-      "image": "stock-images/198482654259.jpg",
-      "subtitle": "full service history cam belt been done ulez",
-      "description": "2017 LAND ROVER RANGE ROVER SPORT 3.0 SDV6 [354] Hybrid HSE Dynamic 5dr Automatic...",
-      "details": [
-        "2017",
-        "98,143 Miles",
-        "Estate",
-        "2993 ccm",
-        "Grey"
       ]
     },
     {
