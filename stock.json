@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-07-16T18:55:01.827Z",
-  "total": 14,
+  "updatedAt": "2026-07-17T07:51:12.384Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2018 Audi A3 1.0 TFSI SE Technik 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198502561297",
+      "price": "£4,995.00",
+      "image": "stock-images/198502561297.jpg",
+      "subtitle": "Black, 124,810 Miles",
+      "description": "2018 AUDI A3 1.0 TFSI SE Technik 5dr VERY ECONOMICAL, LOW INSURANCE GROUP COME...",
+      "details": [
+        "2018",
+        "124,810 Miles",
+        "Hatchback",
+        "999 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2011 Porsche Cayenne Diesel [245] 5dr Tiptronic S ESTATE Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/198497740405",
