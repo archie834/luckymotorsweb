@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-07-21T13:15:13.557Z",
-  "total": 13,
+  "updatedAt": "2026-07-21T19:02:32.086Z",
+  "total": 14,
   "vehicles": [
+    {
+      "title": "2016 Ford Fiesta 1.0 EcoBoost Zetec 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198513727991",
+      "price": "£2,495.00",
+      "image": "stock-images/198513727991.jpg",
+      "subtitle": "full mean dealer service history £20 road tax",
+      "description": "2016 FORD FIESTA 1.0 EcoBoost Zetec 5dr £20 road tax years this car has full mean...",
+      "details": [
+        "2016",
+        "113,383 Miles",
+        "Hatchback",
+        "998 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/198504997291",
