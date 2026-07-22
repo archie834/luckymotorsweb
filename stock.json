@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-22T08:07:22.901Z",
-  "total": 15,
+  "updatedAt": "2026-07-22T13:20:15.705Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2016 Ford Mondeo 2.0 TDCi Titanium 5dr Powershift HATCHBACK Diesel Automatic",
@@ -14,21 +14,6 @@
         "105,633 Miles",
         "Hatchback",
         "1997 ccm",
-        "Black"
-      ]
-    },
-    {
-      "title": "2016 Ford Fiesta 1.0 EcoBoost Zetec 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198513727991",
-      "price": "£2,495.00",
-      "image": "stock-images/198513727991.jpg",
-      "subtitle": "full mean dealer service history £20 road tax",
-      "description": "2016 FORD FIESTA 1.0 EcoBoost Zetec 5dr £20 road tax years this car has full mean...",
-      "details": [
-        "2016",
-        "113,383 Miles",
-        "Hatchback",
-        "998 ccm",
         "Black"
       ]
     },
