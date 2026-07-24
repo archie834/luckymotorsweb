@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-24T08:06:00.312Z",
-  "total": 14,
+  "updatedAt": "2026-07-24T13:16:21.426Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2016 Volkswagen Passat 1.6 TDI Bluemotion 5dr ESTATE Diesel Manual",
@@ -45,21 +45,6 @@
         "Hatchback",
         "1968 ccm",
         "Silver"
-      ]
-    },
-    {
-      "title": "2018 Audi A3 1.0 TFSI SE Technik 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198502561297",
-      "price": "£4,995.00",
-      "image": "stock-images/198502561297.jpg",
-      "subtitle": "Black, 124,810 Miles",
-      "description": "2018 AUDI A3 1.0 TFSI SE Technik 5dr VERY ECONOMICAL, LOW INSURANCE GROUP COME...",
-      "details": [
-        "2018",
-        "124,810 Miles",
-        "Hatchback",
-        "999 ccm",
-        "Black"
       ]
     },
     {
