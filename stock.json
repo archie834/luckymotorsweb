@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-25T07:51:32.830Z",
-  "total": 13,
+  "updatedAt": "2026-07-25T12:59:37.854Z",
+  "total": 12,
   "vehicles": [
     {
       "title": "2016 Volkswagen Passat 1.6 TDI Bluemotion 5dr ESTATE Diesel Manual",
@@ -15,21 +15,6 @@
         "Estate",
         "1598 ccm",
         "Grey"
-      ]
-    },
-    {
-      "title": "2016 Ford Mondeo 2.0 TDCi Titanium 5dr Powershift HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198514404127",
-      "price": "£4,495.00",
-      "image": "stock-images/198514404127.jpg",
-      "subtitle": "12 month mot automatic",
-      "description": "2016 FORD MONDEO 2.0 TDCi Titanium 5dr Powershift automatic 12 month mot air con...",
-      "details": [
-        "2016",
-        "105,633 Miles",
-        "Hatchback",
-        "1997 ccm",
-        "Black"
       ]
     },
     {
