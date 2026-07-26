@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-07-26T12:56:32.026Z",
-  "total": 13,
+  "updatedAt": "2026-07-26T18:55:04.645Z",
+  "total": 12,
   "vehicles": [
     {
       "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
@@ -44,21 +44,6 @@
         "134,987 Miles",
         "Convertible",
         "1968 ccm",
-        "Grey"
-      ]
-    },
-    {
-      "title": "2016 Volkswagen Passat 1.6 TDI Bluemotion 5dr ESTATE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198516971828",
-      "price": "£3,695.00",
-      "image": "stock-images/198516971828.jpg",
-      "subtitle": "full service history cam belt done  £20 road tax",
-      "description": "2016 VOLKSWAGEN PASSAT 1.6 TDI Bluemotion 5dr £20 road tax years ESTATE Diesel full...",
-      "details": [
-        "2016",
-        "163,339 Miles",
-        "Estate",
-        "1598 ccm",
         "Grey"
       ]
     },
