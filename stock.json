@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T12:20:56.433Z",
+  "updatedAt": "2026-08-17T18:21:56.332Z",
   "total": 12,
   "vehicles": [
     {
@@ -27,6 +27,7 @@
       "details": [
         "2015",
         "100,997 Miles",
+        "MPV",
         "1997 ccm",
         "Grey"
       ]
