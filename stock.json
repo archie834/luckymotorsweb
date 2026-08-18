@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-18T06:24:02.178Z",
-  "total": 12,
+  "updatedAt": "2026-08-18T12:22:28.175Z",
+  "total": 11,
   "vehicles": [
     {
       "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
@@ -60,21 +60,6 @@
         "Coupe",
         "999 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2017 Audi A5 2.0 TDI Quattro Sport 2dr S Tronic CONVERTIBLE Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198575265453",
-      "price": "£8,350.00",
-      "image": "stock-images/198575265453.jpg",
-      "subtitle": "full service history automatic",
-      "description": "2017 AUDI A5 2.0 TDI Quattro Sport 2dr S Tronic CONVERTIBLE AUTOMATIC FULL service...",
-      "details": [
-        "2017",
-        "134,897 Miles",
-        "Convertible",
-        "1968 ccm",
-        "Grey"
       ]
     },
     {
