@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-08-27T17:03:09.294Z",
-  "total": 11,
+  "updatedAt": "2026-08-28T01:53:08.532Z",
+  "total": 13,
   "vehicles": [
+    {
+      "title": "2013 Volkswagen UP 1.0 Groove Up 3dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198599530453",
+      "price": "£2,695.00",
+      "image": "stock-images/198599530453.jpg",
+      "subtitle": "full service history cam belt been done",
+      "description": "2013 VOLKSWAGEN UP 1.0 Groove Up 3dr.FSH / £20 Tax. cam belt been done @ 88k full...",
+      "details": [
+        "2013",
+        "98,375 Miles",
+        "Hatchback",
+        "999 ccm",
+        "White"
+      ]
+    },
+    {
+      "title": "2016 Mercedes-Benz GLA GLA 200d Sport 5dr Auto [Premium Plus] ESTATE Diesel Auto",
+      "link": "https://www.ebay.co.uk/itm/198599503240",
+      "price": "£6,495.00",
+      "image": "stock-images/198599503240.jpg",
+      "subtitle": "service history  £20 rd tax",
+      "description": "2016 MERCEDES-BENZ GLA GLA 200d Sport 5dr Auto [Premium Plus] diesel engine Euro...",
+      "details": [
+        "2016",
+        "122,443 Miles",
+        "Estate",
+        "2143 ccm",
+        "Silver"
+      ]
+    },
     {
       "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198575467836",
@@ -37,7 +67,7 @@
       "link": "https://www.ebay.co.uk/itm/198575278075",
       "price": "£3,650.00",
       "image": "stock-images/198575278075.jpg",
-      "subtitle": "battery own 12 month mot no advisory",
+      "subtitle": "battery own",
       "description": "2017 NISSAN LEAF 80kW Tekna 30kWh 5dr Automatic battery own drive spot on with no...",
       "details": [
         "2017",
