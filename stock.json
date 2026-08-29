@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-29T11:55:58.986Z",
-  "total": 11,
+  "updatedAt": "2026-08-29T15:58:26.056Z",
+  "total": 9,
   "vehicles": [
     {
       "title": "2013 Volkswagen UP 1.0 Groove Up 3dr HATCHBACK Petrol Manual",
@@ -45,21 +45,6 @@
         "MPV",
         "1997 ccm",
         "Grey"
-      ]
-    },
-    {
-      "title": "2017 Nissan Leaf 80kW Tekna 30kWh 5dr Auto HATCHBACK Electric Automatic",
-      "link": "https://www.ebay.co.uk/itm/198575278075",
-      "price": "£3,650.00",
-      "image": "stock-images/198575278075.jpg",
-      "subtitle": "battery own",
-      "description": "2017 NISSAN LEAF 80kW Tekna 30kWh 5dr Automatic battery own drive spot on with no...",
-      "details": [
-        "2017",
-        "86,209 Miles",
-        "Hatchback",
-        "1 ccm",
-        "White"
       ]
     },
     {
@@ -150,21 +135,6 @@
         "Hatchback",
         "1398 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198573746488",
-      "price": "£3,495.00",
-      "image": "stock-images/198573746488.jpg",
-      "subtitle": "full service history cam belt done",
-      "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
-      "details": [
-        "2015",
-        "160,896 Miles",
-        "Hatchback",
-        "1968 ccm",
-        "Silver"
       ]
     }
   ]
