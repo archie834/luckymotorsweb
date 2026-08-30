@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-30T10:53:09.098Z",
-  "total": 8,
+  "updatedAt": "2026-08-30T15:41:06.946Z",
+  "total": 7,
   "vehicles": [
     {
       "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
@@ -74,21 +74,6 @@
         "103,151 Miles",
         "Hatchback",
         "1496 ccm",
-        "Blue"
-      ]
-    },
-    {
-      "title": "2011 Porsche Cayenne Diesel [245] 5dr Tiptronic S ESTATE Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198573789052",
-      "price": "£5,995.00",
-      "image": "stock-images/198573789052.jpg",
-      "subtitle": "full service history 2key",
-      "description": "2011 PORSCHE CAYENNE Diesel [245] 5dr Tiptronic S automatic a Comprehensive previous...",
-      "details": [
-        "2011",
-        "185,725 Miles",
-        "Estate",
-        "2967 ccm",
         "Blue"
       ]
     },
