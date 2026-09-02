@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-02T15:34:26.560Z",
-  "total": 7,
+  "updatedAt": "2026-09-02T20:15:29.565Z",
+  "total": 8,
   "vehicles": [
+    {
+      "title": "2012 Volkswagen Polo 1.2 60 Match 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198613403270",
+      "price": "£2,150.00",
+      "image": "stock-images/198613403270.jpg",
+      "subtitle": "full service history timing chain  been done",
+      "description": "2012 VOLKSWAGEN POLO 1.2 60 Match 5dr full service history and 2 key including has...",
+      "details": [
+        "2012",
+        "137,876 Miles",
+        "Hatchback",
+        "1198 ccm",
+        "Grey"
+      ]
+    },
     {
       "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198611157445",
@@ -95,7 +110,7 @@
     {
       "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198573761420",
-      "price": "£2,795.00",
+      "price": "£2,595.00",
       "image": "stock-images/198573761420.jpg",
       "subtitle": "full service history 12 month mot",
       "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
