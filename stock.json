@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-02T10:08:49.102Z",
-  "total": 8,
+  "updatedAt": "2026-09-02T15:34:26.560Z",
+  "total": 7,
   "vehicles": [
     {
       "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
@@ -60,21 +60,6 @@
         "Coupe",
         "999 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2014 MINI Paceman 1.6 Cooper D 3dr COUPE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198573803535",
-      "price": "£2,450.00",
-      "image": "stock-images/198573803535.jpg",
-      "subtitle": "£35road tax years 12 month mot",
-      "description": "2014 MINI PACEMAN 1.6 Cooper D 3dr diesel come with 2 Keys HPI CLEAR £35 road tax...",
-      "details": [
-        "2014",
-        "120,618 Miles",
-        "Coupe",
-        "1598 ccm",
-        "White"
       ]
     },
     {
