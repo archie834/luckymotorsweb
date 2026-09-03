@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-03T15:26:23.136Z",
-  "total": 8,
+  "updatedAt": "2026-09-03T20:15:57.471Z",
+  "total": 9,
   "vehicles": [
+    {
+      "title": "2017 Toyota AYGO 1.0 VVT-i X-Play 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198616082031",
+      "price": "£3,395.00",
+      "image": "stock-images/198616082031.jpg",
+      "subtitle": "£20 a year to tax",
+      "description": "2017 TOYOTA AYGO 1.0 VVT-i X-Play 5dr this vehicle is equipped with a 1.0-litre petrol...",
+      "details": [
+        "2017",
+        "110,998 Miles",
+        "Hatchback",
+        "998 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2012 Volkswagen Polo 1.2 60 Match 5dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198613403270",
