@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-09-04T15:23:33.233Z",
-  "total": 9,
+  "updatedAt": "2026-09-04T20:00:41.370Z",
+  "total": 10,
   "vehicles": [
+    {
+      "title": "2015 Renault Clio 1.2 16V Expression+ 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198618516463",
+      "price": "£2,795.00",
+      "image": "stock-images/198618516463.jpg",
+      "subtitle": "full service history",
+      "description": "2015 RENAULT CLIO 1.2 16V Expression+ 5dr full service history drive spot on THE...",
+      "details": [
+        "102,382 Miles",
+        "Hatchback",
+        "1149 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2017 Toyota AYGO 1.0 VVT-i X-Play 5dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198616082031",
