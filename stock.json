@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-05T09:37:28.970Z",
-  "total": 10,
+  "updatedAt": "2026-09-05T14:11:21.374Z",
+  "total": 9,
   "vehicles": [
     {
       "title": "2015 Renault Clio 1.2 16V Expression+ 5dr HATCHBACK Petrol Manual",
@@ -30,21 +30,6 @@
         "Hatchback",
         "998 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2012 Volkswagen Polo 1.2 60 Match 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198613403270",
-      "price": "£2,150.00",
-      "image": "stock-images/198613403270.jpg",
-      "subtitle": "full service history timing chain  been done",
-      "description": "2012 VOLKSWAGEN POLO 1.2 60 Match 5dr full service history and 2 key including has...",
-      "details": [
-        "2012",
-        "137,876 Miles",
-        "Hatchback",
-        "1198 ccm",
-        "Grey"
       ]
     },
     {
