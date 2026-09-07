@@ -1,15 +1,31 @@
 {
-  "updatedAt": "2026-09-06T19:43:50.915Z",
-  "total": 10,
+  "updatedAt": "2026-09-07T10:59:49.118Z",
+  "total": 11,
   "vehicles": [
+    {
+      "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198623277363",
+      "price": "£4,795.00",
+      "image": "stock-images/198623277363.jpg",
+      "subtitle": "Beige, 103,557 Miles",
+      "description": "2019 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
+      "details": [
+        "2019",
+        "103,557 Miles",
+        "MPV",
+        "1199 ccm",
+        "Beige"
+      ]
+    },
     {
       "title": "2017 Ford S-Max 2.0 TDCi 180 Titanium 5dr Powershift MPV Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/198623257935",
       "price": "£6,495.00",
       "image": "stock-images/198623257935.jpg",
       "subtitle": "full service history 12 month mot automatic",
-      "description": "2015 FORD S-MAX 2.0 TDCi 150 Titanium 5dr Powershift automatic 7 seater new shape....",
+      "description": "2017 FORD S-MAX 2.0 TDCi 150 Titanium 5dr Powershift automatic 7 seater new shape....",
       "details": [
+        "2017",
         "104,524 Miles",
         "1997 ccm",
         "Black"
