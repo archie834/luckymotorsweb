@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-08T20:27:13.888Z",
+  "updatedAt": "2026-09-09T10:20:38.393Z",
   "total": 12,
   "vehicles": [
+    {
+      "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198628180319",
+      "price": "£2,695.00",
+      "image": "stock-images/198628180319.jpg",
+      "subtitle": "service £20 rd tax Apple Car Play",
+      "description": "2014 MINI HATCHBACK 1.5 Cooper D 3drOnly £20 a year road tax will come with private...",
+      "details": [
+        "2014",
+        "103,151 Miles",
+        "Hatchback",
+        "1496 ccm",
+        "Blue"
+      ]
+    },
     {
       "title": "2015 Vauxhall Corsa 1.2 Excite 5dr [AC] HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198625554522",
@@ -65,7 +80,7 @@
     {
       "title": "2015 Renault Clio 1.2 16V Expression+ 5dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198618516463",
-      "price": "£2,795.00",
+      "price": "£2,695.00",
       "image": "stock-images/198618516463.jpg",
       "subtitle": "full service history",
       "description": "2015 RENAULT CLIO 1.2 16V Expression+ 5dr full service history drive spot on THE...",
@@ -135,21 +150,6 @@
         "MPV",
         "1997 ccm",
         "Grey"
-      ]
-    },
-    {
-      "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198573796013",
-      "price": "£2,850.00",
-      "image": "stock-images/198573796013.jpg",
-      "subtitle": "service £20 rd tax Apple Car Play",
-      "description": "2014 MINI HATCHBACK 1.5 Cooper D 3drOnly £20 a year road tax will come with private...",
-      "details": [
-        "2014",
-        "103,151 Miles",
-        "Hatchback",
-        "1496 ccm",
-        "Blue"
       ]
     },
     {
