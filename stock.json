@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-17T15:51:06.326Z",
-  "total": 16,
+  "updatedAt": "2026-09-17T20:43:23.631Z",
+  "total": 15,
   "vehicles": [
     {
       "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
@@ -45,21 +45,6 @@
         "Hatchback",
         "998 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2013 BMW 1 Series 116i M Sport 3dr Step Auto HATCHBACK Petrol Automatic",
-      "link": "https://www.ebay.co.uk/itm/198635028952",
-      "price": "£3,895.00",
-      "image": "stock-images/198635028952.jpg",
-      "subtitle": "automatic",
-      "description": "2013 BMW 1 SERIES 116i M Sport 3dr Step Automatic Starts and drives perfect with...",
-      "details": [
-        "2013",
-        "123,771 Miles",
-        "Hatchback",
-        "1598 ccm",
-        "Blue"
       ]
     },
     {
