@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-09-18T15:24:36.103Z",
+  "updatedAt": "2026-09-18T20:07:33.998Z",
   "total": 14,
   "vehicles": [
+    {
+      "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198651051132",
+      "price": "£2,450.00",
+      "image": "stock-images/198651051132.jpg",
+      "subtitle": "Red, 140,903 Miles",
+      "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 5dr SERVICE HISTORY 2 key....",
+      "details": [
+        "2013",
+        "140,903 Miles",
+        "MPV",
+        "1796 ccm",
+        "Red"
+      ]
+    },
     {
       "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198646432928",
@@ -180,21 +195,6 @@
         "MPV",
         "1997 ccm",
         "Grey"
-      ]
-    },
-    {
-      "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198573783707",
-      "price": "£2,695.00",
-      "image": "stock-images/198573783707.jpg",
-      "subtitle": "12 month mot",
-      "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 12 month mot 5dr 5dr SERVICE...",
-      "details": [
-        "2013",
-        "140,903 Miles",
-        "MPV",
-        "1796 ccm",
-        "Red"
       ]
     },
     {
