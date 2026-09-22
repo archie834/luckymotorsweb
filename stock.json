@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-09-22T15:55:14.078Z",
+  "updatedAt": "2026-09-22T20:37:51.436Z",
   "total": 14,
   "vehicles": [
+    {
+      "title": "2018 smart fortwo 1.0 Passion 2dr COUPE Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198660214772",
+      "price": "£2,995.00",
+      "image": "stock-images/198660214772.jpg",
+      "subtitle": "3 month warranty",
+      "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
+      "details": [
+        "119,619 Miles",
+        "Coupe",
+        "999 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2016 Toyota AYGO 1.0 VVT-i X-Play 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198657383763",
@@ -164,21 +178,6 @@
         "110,998 Miles",
         "Hatchback",
         "998 ccm",
-        "White"
-      ]
-    },
-    {
-      "title": "2016 Fiat 500 1.2 Pop Star 3dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198575467836",
-      "price": "£2,495.00",
-      "image": "stock-images/198575467836.jpg",
-      "subtitle": "full service history cam belt been done",
-      "description": "2016 FIAT 500 1.2 Pop Star 3dr 2 keys HPI Clear 12 month mot ull service history...",
-      "details": [
-        "2016",
-        "110,651 Miles",
-        "Hatchback",
-        "1242 ccm",
         "White"
       ]
     },
