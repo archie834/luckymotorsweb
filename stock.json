@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-26T10:28:46.042Z",
-  "total": 15,
+  "updatedAt": "2026-09-26T15:19:55.785Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2016 Audi Q7 3.0 TDI Quattro S Line 5dr Tip Auto ESTATE Diesel Automatic",
@@ -150,21 +150,6 @@
         "MPV",
         "1199 ccm",
         "Beige"
-      ]
-    },
-    {
-      "title": "2017 Ford S-Max 2.0 TDCi 180 Titanium 5dr Powershift MPV Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198623257935",
-      "price": "£6,495.00",
-      "image": "stock-images/198623257935.jpg",
-      "subtitle": "full service history 12 month mot automatic",
-      "description": "2017 FORD S-MAX 2.0 TDCi 150 Titanium 5dr Powershift automatic 7 seater new shape....",
-      "details": [
-        "2017",
-        "104,524 Miles",
-        "MPV",
-        "1997 ccm",
-        "Black"
       ]
     },
     {
