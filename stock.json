@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-02T17:00:08.391Z",
-  "total": 14,
+  "updatedAt": "2026-10-02T21:33:30.214Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2015 Volkswagen Polo 1.2 TSI SE 3dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198683186359",
+      "price": "£3,495.00",
+      "image": "stock-images/198683186359.jpg",
+      "subtitle": "12 month mot no advisory",
+      "description": "2015 VOLKSWAGEN POLO 1.2 TSI SE 3dr 20 road tax years drive spot on THE CAR DRIVES...",
+      "details": [
+        "2015",
+        "115,117 Miles",
+        "Hatchback",
+        "1197 ccm",
+        "Red"
+      ]
+    },
     {
       "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198671358847",
