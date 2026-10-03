@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-03T15:23:47.601Z",
-  "total": 15,
+  "updatedAt": "2026-10-03T20:19:32.555Z",
+  "total": 14,
   "vehicles": [
+    {
+      "title": "2018 smart FORTWO COUPE 1.0 Passion 2dr COUPE Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198685941566",
+      "price": "£2,295.00",
+      "image": "stock-images/198685941566.jpg",
+      "subtitle": "Black, 119,169 Miles",
+      "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
+      "details": [
+        "2018",
+        "119,169 Miles",
+        "Coupe",
+        "999 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2015 Volkswagen Polo 1.2 TSI SE 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198683186359",
@@ -59,21 +74,6 @@
         "149,503 Miles",
         "Estate",
         "2967 ccm",
-        "Black"
-      ]
-    },
-    {
-      "title": "2018 smart FORTWO COUPE 1.0 Passion 2dr COUPE Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198660214772",
-      "price": "£2,995.00",
-      "image": "stock-images/198660214772.jpg",
-      "subtitle": "3 month warranty",
-      "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
-      "details": [
-        "2018",
-        "119,619 Miles",
-        "Coupe",
-        "999 ccm",
         "Black"
       ]
     },
@@ -195,21 +195,6 @@
         "Hatchback",
         "1149 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2017 Toyota AYGO 1.0 VVT-i X-Play 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198616082031",
-      "price": "£3,395.00",
-      "image": "stock-images/198616082031.jpg",
-      "subtitle": "£20 a year to tax",
-      "description": "2017 TOYOTA AYGO 1.0 VVT-i X-Play 5dr this vehicle is equipped with a 1.0-litre petrol...",
-      "details": [
-        "2017",
-        "110,998 Miles",
-        "Hatchback",
-        "998 ccm",
-        "White"
       ]
     },
     {
