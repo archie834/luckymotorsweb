@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-05T12:58:12.236Z",
+  "updatedAt": "2026-10-05T23:27:27.272Z",
   "total": 15,
   "vehicles": [
+    {
+      "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198690729786",
+      "price": "£4,495.00",
+      "image": "stock-images/198690729786.jpg",
+      "subtitle": "Beige, 103,577 Miles",
+      "description": "2019 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
+      "details": [
+        "2019",
+        "103,577 Miles",
+        "MPV",
+        "1199 ccm",
+        "Beige"
+      ]
+    },
     {
       "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198688247230",
@@ -180,21 +195,6 @@
         "Hatchback",
         "1229 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198623277363",
-      "price": "£4,795.00",
-      "image": "stock-images/198623277363.jpg",
-      "subtitle": "Beige, 103,557 Miles",
-      "description": "2019 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
-      "details": [
-        "2019",
-        "103,557 Miles",
-        "MPV",
-        "1199 ccm",
-        "Beige"
       ]
     },
     {
