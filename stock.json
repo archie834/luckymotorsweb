@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-06T12:23:33.559Z",
-  "total": 14,
+  "updatedAt": "2026-10-06T21:59:42.892Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198694066634",
+      "price": "£2,295.00",
+      "image": "stock-images/198694066634.jpg",
+      "subtitle": "full service history",
+      "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
+      "details": [
+        "2013",
+        "95,738 Miles",
+        "Hatchback",
+        "1398 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198690729786",
