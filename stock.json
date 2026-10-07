@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-07T12:16:14.164Z",
-  "total": 14,
+  "updatedAt": "2026-10-07T22:24:48.407Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2022 Nissan Micra 1.0 IG-T 92 N-Sport 5dr CVT HATCHBACK Petrol Automatic",
+      "link": "https://www.ebay.co.uk/itm/198696139832",
+      "price": "£5,295.00",
+      "image": "stock-images/198696139832.jpg",
+      "subtitle": "full service history 12 month mot automatic",
+      "description": "2022 NISSAN MICRA 1.0 IG-T 92 N-Sport 5dr CVT automatic 1 owner from new full service...",
+      "details": [
+        "2022",
+        "135,365 Miles",
+        "Hatchback",
+        "999 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198694066634",
