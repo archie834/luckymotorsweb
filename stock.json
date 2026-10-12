@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-11T21:12:00.028Z",
-  "total": 15,
+  "updatedAt": "2026-10-12T13:50:11.714Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
@@ -210,21 +210,6 @@
         "Hatchback",
         "1229 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2015 Renault Clio 1.2 16V Expression+ 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198618516463",
-      "price": "£2,695.00",
-      "image": "stock-images/198618516463.jpg",
-      "subtitle": "full service history",
-      "description": "2015 RENAULT CLIO 1.2 16V Expression+ 5dr full service history drive spot on THE...",
-      "details": [
-        "2015",
-        "102,382 Miles",
-        "Hatchback",
-        "1149 ccm",
-        "Black"
       ]
     }
   ]
