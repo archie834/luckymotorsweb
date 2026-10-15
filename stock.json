@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-15T10:31:52.778Z",
-  "total": 15,
+  "updatedAt": "2026-10-15T15:56:09.050Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2015 Vauxhall Corsa 1.2 Excite 5dr [AC] HATCHBACK Petrol Manual",
@@ -105,21 +105,6 @@
         "MPV",
         "1199 ccm",
         "Beige"
-      ]
-    },
-    {
-      "title": "2019 Audi Q2 30 TDI S Line 5dr ESTATE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198688247230",
-      "price": "£5,995.00",
-      "image": "stock-images/198688247230.jpg",
-      "subtitle": "Grey, 165,218 Miles",
-      "description": "2018 AUDI Q2 30 TDI S Line 5dr 1.6 diesel service history drive spot on with no fault...",
-      "details": [
-        "2019",
-        "165,218 Miles",
-        "Estate",
-        "1598 ccm",
-        "Grey"
       ]
     },
     {
