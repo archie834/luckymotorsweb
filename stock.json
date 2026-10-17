@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-17T09:52:39.497Z",
-  "total": 14,
+  "updatedAt": "2026-10-17T14:36:57.043Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2015 Vauxhall Corsa 1.2 Excite 5dr [AC] HATCHBACK Petrol Manual",
@@ -60,21 +60,6 @@
         "Hatchback",
         "1499 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2022 Nissan Micra 1.0 IG-T 92 N-Sport 5dr CVT HATCHBACK Petrol Automatic",
-      "link": "https://www.ebay.co.uk/itm/198696139832",
-      "price": "£5,295.00",
-      "image": "stock-images/198696139832.jpg",
-      "subtitle": "full service history 12 month mot automatic",
-      "description": "2022 NISSAN MICRA 1.0 IG-T 92 N-Sport 5dr CVT automatic 1 owner from new full service...",
-      "details": [
-        "2022",
-        "135,365 Miles",
-        "Hatchback",
-        "999 ccm",
-        "Black"
       ]
     },
     {
