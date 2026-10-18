@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-18T15:04:00.966Z",
-  "total": 11,
+  "updatedAt": "2026-10-18T19:50:01.382Z",
+  "total": 12,
   "vehicles": [
+    {
+      "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198725733856",
+      "price": "£2,150.00",
+      "image": "stock-images/198725733856.jpg",
+      "subtitle": "full service history",
+      "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
+      "details": [
+        "2013",
+        "95,738 Miles",
+        "Hatchback",
+        "1398 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2015 Vauxhall Corsa 1.2 Excite 5dr [AC] HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198715655592",
