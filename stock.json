@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-19T17:55:35.679Z",
-  "total": 11,
+  "updatedAt": "2026-10-19T21:51:27.589Z",
+  "total": 12,
   "vehicles": [
+    {
+      "title": "2014 MINI Hatch 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198728501579",
+      "price": "£2,450.00",
+      "image": "stock-images/198728501579.jpg",
+      "subtitle": "service history £20 rd tax Apple Car Play",
+      "description": "2014 MINI HATCHBACK 1.5 Cooper D 3drOnly £20 a year road tax will come with private...",
+      "details": [
+        "2014",
+        "103,151 Miles",
+        "Hatchback",
+        "1496 ccm",
+        "Blue"
+      ]
+    },
     {
       "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
       "link": "https://www.ebay.co.uk/itm/198725733856",
