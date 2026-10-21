@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-10-21T16:16:32.436Z",
-  "total": 12,
+  "updatedAt": "2026-10-21T21:00:10.812Z",
+  "total": 14,
   "vehicles": [
+    {
+      "title": "2017 Peugeot 3008 1.6 BlueHDi 120 Active 5dr HATCHBACK Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198734497384",
+      "price": "£4,750.00",
+      "image": "stock-images/198734497384.jpg",
+      "subtitle": "ULEZ compliant",
+      "description": "2017 PEUGEOT 3008 1.6 BlueHDi 120 Active 5dr drive spot on THE CAR DRIVES FAULTLESS...",
+      "details": [
+        "2017",
+        "111,387 Miles",
+        "Hatchback",
+        "1560 ccm",
+        "Blue"
+      ]
+    },
+    {
+      "title": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr HATCHBACK Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/",
+      "price": "£1,895.00",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/H9gAAeSwJqFq2Rny/$_2.JPG",
+      "subtitle": "£20 a year to tax euro 6 ulez",
+      "description": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr £20 a year to tax euro 6 ulez drive spot on...",
+      "details": [
+        "2015",
+        "65,213 Miles",
+        "Hatchback",
+        "1560 ccm",
+        "Purple"
+      ]
+    },
     {
       "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198728501579",
