@@ -1,7 +1,37 @@
 {
-  "updatedAt": "2026-10-22T16:15:27.714Z",
-  "total": 14,
+  "updatedAt": "2026-10-22T20:57:39.816Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
+      "link": "https://www.ebay.co.uk/itm/",
+      "price": "£6,995.00",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/tlcAAeSw68Vq2l2t/$_2.JPG",
+      "subtitle": "Automatic  AMG Styling Must See",
+      "description": "2019 MERCEDES-BENZ A CLASS A180d 1.5 diesel engine AMG Line Executive 5dr Automatic...",
+      "details": [
+        "2019",
+        "165,700 Miles",
+        "Hatchback",
+        "1461 ccm",
+        "Black"
+      ]
+    },
+    {
+      "title": "2016 Volkswagen UP 1.0 Look Up 5dr HATCHBACK Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198736972800",
+      "price": "£3,495.00",
+      "image": "stock-images/198736972800.jpg",
+      "subtitle": "full service history  £20 road tax",
+      "description": "2016 VOLKSWAGEN UP 1.0 Look Up 5dr HPI Clear full service history and 2 key car...",
+      "details": [
+        "2016",
+        "81,642 Miles",
+        "Hatchback",
+        "999 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2017 Peugeot 3008 1.6 BlueHDi 120 Active 5dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198734497384",
@@ -183,25 +213,10 @@
       ]
     },
     {
-      "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198651051132",
-      "price": "£2,450.00",
-      "image": "stock-images/198651051132.jpg",
-      "subtitle": "Red, 140,903 Miles",
-      "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 5dr SERVICE HISTORY 2 key....",
-      "details": [
-        "2013",
-        "140,903 Miles",
-        "MPV",
-        "1796 ccm",
-        "Red"
-      ]
-    },
-    {
       "title": "2014 Honda CR-V 16 i-DTEC SR 5dr 2WD ESTATE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198646413602",
+      "link": "https://www.ebay.co.uk/itm/198737199442",
       "price": "£3,595.00",
-      "image": "stock-images/198646413602.jpg",
+      "image": "stock-images/198737199442.jpg",
       "subtitle": "full service history 12 month mot",
       "description": "2014 Honda CR-V 1.6 i-DTEC SR SUV 5dr Diesel Manual (120 ps) FULL SERVICE HSTORY...",
       "details": [
