@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-22T20:57:39.816Z",
-  "total": 15,
+  "updatedAt": "2026-10-23T10:41:05.346Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£6,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/tlcAAeSw68Vq2l2t/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/FocAAeSwnldq2vBT/$_2.JPG",
       "subtitle": "Automatic  AMG Styling Must See",
       "description": "2019 MERCEDES-BENZ A CLASS A180d 1.5 diesel engine AMG Line Executive 5dr Automatic...",
       "details": [
@@ -51,7 +51,7 @@
       "title": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£1,895.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/H9gAAeSwJqFq2Rny/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/nowAAeSwKwtq2vBX/$_2.JPG",
       "subtitle": "£20 a year to tax euro 6 ulez",
       "description": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr £20 a year to tax euro 6 ulez drive spot on...",
       "details": [
@@ -105,21 +105,6 @@
         "Hatchback",
         "1229 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2015 Renault Clio 1.2 16V Expression+ 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198710108607",
-      "price": "£2,495.00",
-      "image": "stock-images/198710108607.jpg",
-      "subtitle": "full service history",
-      "description": "2015 RENAULT CLIO 1.2 16V Expression+ 5dr full service history drive spot on THE...",
-      "details": [
-        "2015",
-        "102,382 Miles",
-        "Hatchback",
-        "1149 ccm",
-        "Black"
       ]
     },
     {
