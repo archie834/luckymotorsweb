@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-24T15:02:13.196Z",
+  "updatedAt": "2026-10-24T19:57:17.197Z",
   "total": 14,
   "vehicles": [
+    {
+      "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198742471881",
+      "price": "£3,995.00",
+      "image": "stock-images/198742471881.jpg",
+      "subtitle": "hpi clear drive spot on no fault",
+      "description": "2019 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
+      "details": [
+        "2019",
+        "103,577 Miles",
+        "MPV",
+        "1199 ccm",
+        "Beige"
+      ]
+    },
     {
       "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
       "link": "https://www.ebay.co.uk/itm/",
@@ -135,21 +150,6 @@
         "Hatchback",
         "1499 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2019 Citroen C3 Aircross 1.2 PureTech 130 Flair 5dr MPV Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198690729786",
-      "price": "£4,495.00",
-      "image": "stock-images/198690729786.jpg",
-      "subtitle": "Beige, 103,577 Miles",
-      "description": "2019 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
-      "details": [
-        "2019",
-        "103,577 Miles",
-        "MPV",
-        "1199 ccm",
-        "Beige"
       ]
     },
     {
