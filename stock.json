@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-28T11:48:07.106Z",
+  "updatedAt": "2026-10-28T17:36:07.841Z",
   "total": 15,
   "vehicles": [
+    {
+      "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198752550591",
+      "price": "£2,150.00",
+      "image": "stock-images/198752550591.jpg",
+      "subtitle": "service history",
+      "description": "2013 MERCEDES-BENZ B CLASS B200 CDI BlueEFFICIENCY Sport 5dr SERVICE HISTORY 2 key....",
+      "details": [
+        "2013",
+        "140,103 Miles",
+        "MPV",
+        "1796 ccm",
+        "Red"
+      ]
+    },
     {
       "title": "2017 BMW 3 Series 320d EfficientDynamics Plus 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198752024796",
@@ -10,6 +25,7 @@
       "subtitle": "full service history",
       "description": "2017 BMW 3 SERIES 320d EfficientDynamics Plus 5dr drive spot on THE CAR DRIVES FAULTLESS...",
       "details": [
+        "2017",
         "132,178 Miles",
         "Estate",
         "1995 ccm",
@@ -104,21 +120,6 @@
         "Hatchback",
         "1560 ccm",
         "Blue"
-      ]
-    },
-    {
-      "title": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr HATCHBACK Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/",
-      "price": "£1,895.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/4KEAAeSwOE5q3E8q/$_2.JPG",
-      "subtitle": "£20 a year to tax euro 6 ulez",
-      "description": "2015 DS DS 3 1.6 BlueHDi DStyle 3dr £20 a year to tax euro 6 ulez drive spot on...",
-      "details": [
-        "2015",
-        "65,213 Miles",
-        "Hatchback",
-        "1560 ccm",
-        "Purple"
       ]
     },
     {
