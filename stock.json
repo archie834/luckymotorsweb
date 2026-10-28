@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-10-27T21:35:06.818Z",
+  "updatedAt": "2026-10-28T11:48:07.106Z",
   "total": 15,
   "vehicles": [
+    {
+      "title": "2017 BMW 3 Series 320d EfficientDynamics Plus 5dr ESTATE Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/198752024796",
+      "price": "£4,795.00",
+      "image": "stock-images/198752024796.jpg",
+      "subtitle": "full service history",
+      "description": "2017 BMW 3 SERIES 320d EfficientDynamics Plus 5dr drive spot on THE CAR DRIVES FAULTLESS...",
+      "details": [
+        "132,178 Miles",
+        "Estate",
+        "1995 ccm",
+        "White"
+      ]
+    },
     {
       "title": "2014 Honda CR-V 1.6 i-DTEC SR 5dr 2WD ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198744280982",
@@ -51,7 +65,7 @@
       "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£6,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/yLgAAeSwHrdq4FOQ/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/RKIAAeSwUQlq4aJK/$_2.JPG",
       "subtitle": "Automatic  AMG Styling Must See",
       "description": "2019 MERCEDES-BENZ A CLASS A180d 1.5 diesel engine AMG Line Executive 5dr Automatic...",
       "details": [
@@ -180,21 +194,6 @@
         "Hatchback",
         "1499 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2018 smart FORTWO COUPE 1.0 Passion 2dr COUPE Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198685941566",
-      "price": "£2,295.00",
-      "image": "stock-images/198685941566.jpg",
-      "subtitle": "Black, 119,169 Miles",
-      "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
-      "details": [
-        "2018",
-        "119,169 Miles",
-        "Coupe",
-        "999 ccm",
-        "Black"
       ]
     },
     {
