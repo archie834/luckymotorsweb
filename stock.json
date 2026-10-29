@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-10-29T11:56:14.301Z",
+  "updatedAt": "2026-10-29T17:49:57.449Z",
   "total": 15,
   "vehicles": [
+    {
+      "title": "2018 smart fortwo 1.0 Passion 2dr COUPE Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198754983722",
+      "price": "£2,250.00",
+      "image": "stock-images/198754983722.jpg",
+      "subtitle": "service history",
+      "description": "2018 SMART FORTWO COUPE 1.0 Passion 2dr Euro 6 included 2 keys service history 1...",
+      "details": [
+        "2018",
+        "119,619 Miles",
+        "Coupe",
+        "999 ccm",
+        "Black"
+      ]
+    },
     {
       "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198752550591",
@@ -79,9 +94,9 @@
     },
     {
       "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
-      "link": "https://www.ebay.co.uk/itm/",
+      "link": "https://www.ebay.co.uk/itm/198737084258",
       "price": "£6,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/RW8AAeSwROVq4vQn/$_2.JPG",
+      "image": "stock-images/198737084258.jpg",
       "subtitle": "Automatic  AMG Styling Must See",
       "description": "2019 MERCEDES-BENZ A CLASS A180d 1.5 diesel engine AMG Line Executive 5dr Automatic...",
       "details": [
@@ -90,21 +105,6 @@
         "Hatchback",
         "1461 ccm",
         "Black"
-      ]
-    },
-    {
-      "title": "2016 Volkswagen UP 1.0 Look Up 5dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198736972800",
-      "price": "£3,495.00",
-      "image": "stock-images/198736972800.jpg",
-      "subtitle": "full service history  £20 road tax",
-      "description": "2016 VOLKSWAGEN UP 1.0 Look Up 5dr HPI Clear full service history and 2 key car...",
-      "details": [
-        "2016",
-        "81,642 Miles",
-        "Hatchback",
-        "999 ccm",
-        "White"
       ]
     },
     {
@@ -124,9 +124,9 @@
     },
     {
       "title": "2014 MINI HATCHBACK 1.5 Cooper D 3dr HATCHBACK Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198728501579",
+      "link": "https://www.ebay.co.uk/itm/198754561876",
       "price": "£2,450.00",
-      "image": "stock-images/198728501579.jpg",
+      "image": "stock-images/198754561876.jpg",
       "subtitle": "service history £20 rd tax Apple Car Play",
       "description": "2014 MINI HATCHBACK 1.5 Cooper D 3drOnly £20 a year road tax will come with private...",
       "details": [
