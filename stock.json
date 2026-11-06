@@ -1,7 +1,22 @@
 {
-  "updatedAt": "2026-11-06T13:25:27.950Z",
-  "total": 15,
+  "updatedAt": "2026-11-06T22:30:12.839Z",
+  "total": 16,
   "vehicles": [
+    {
+      "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
+      "link": "https://www.ebay.co.uk/itm/",
+      "price": "£5,995.00",
+      "image": "https://i.ebayimg.com/00/s/MTEyNVgxNTAw/z/3WQAAeSwzYhq7jQF/$_2.JPG",
+      "subtitle": "service history  £20 road tax Euro 6",
+      "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
+      "details": [
+        "2016",
+        "91,464 Miles",
+        "Estate",
+        "2143 ccm",
+        "Red"
+      ]
+    },
     {
       "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/",
