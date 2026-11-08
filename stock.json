@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T12:24:34.273Z",
-  "total": 16,
+  "updatedAt": "2026-11-08T21:27:38.404Z",
+  "total": 14,
   "vehicles": [
     {
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
@@ -138,21 +138,6 @@
       ]
     },
     {
-      "title": "2019 Mercedes-Benz A CLASS A180d AMG Line Executive 5dr Auto HATCHBACK Diesel Au",
-      "link": "https://www.ebay.co.uk/itm/198737084258",
-      "price": "£6,995.00",
-      "image": "stock-images/198737084258.jpg",
-      "subtitle": "Automatic  AMG Styling Must See",
-      "description": "2019 MERCEDES-BENZ A CLASS A180d 1.5 diesel engine AMG Line Executive 5dr Automatic...",
-      "details": [
-        "2019",
-        "165,700 Miles",
-        "Hatchback",
-        "1461 ccm",
-        "Black"
-      ]
-    },
-    {
       "title": "2017 Peugeot 3008 1.6 BlueHDi 120 Active 5dr HATCHBACK Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198734497384",
       "price": "£4,750.00",
@@ -180,21 +165,6 @@
         "Hatchback",
         "1496 ccm",
         "Blue"
-      ]
-    },
-    {
-      "title": "2013 Vauxhall ADAM 1.4i Jam 3dr HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198725733856",
-      "price": "£2,150.00",
-      "image": "stock-images/198725733856.jpg",
-      "subtitle": "full service history",
-      "description": "2013 VAUXHALL ADAM 1.4i Jam 3d full service history drive spot on THE CAR DRIVES...",
-      "details": [
-        "2013",
-        "95,738 Miles",
-        "Hatchback",
-        "1398 ccm",
-        "White"
       ]
     },
     {
