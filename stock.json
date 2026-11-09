@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-08T21:27:38.404Z",
-  "total": 14,
+  "updatedAt": "2026-11-09T14:39:15.982Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£5,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/ChwAAeSwnq1q8Cbh/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/S-0AAeSwbxRq8XeN/$_2.JPG",
       "subtitle": "service history  £20 road tax Euro 6",
       "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
       "details": [
@@ -180,21 +180,6 @@
         "Hatchback",
         "1229 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2015 Ford S-Max 2.0 TDCi 150 Titanium 5dr Powershift MPV Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198671102658",
-      "price": "£5,495.00",
-      "image": "stock-images/198671102658.jpg",
-      "subtitle": "automatic 7 seater",
-      "description": "2015 FORD S-MAX 2.0 TDCi 150 Titanium 5dr Powershift automatic 7 seater hpi clear...",
-      "details": [
-        "2015",
-        "101,202 Miles",
-        "MPV",
-        "1997 ccm",
-        "Grey"
       ]
     },
     {
