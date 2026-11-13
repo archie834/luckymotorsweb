@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T22:57:27.356Z",
+  "updatedAt": "2026-11-13T13:36:42.659Z",
   "total": 14,
   "vehicles": [
     {
@@ -7,11 +7,12 @@
       "link": "https://www.ebay.co.uk/itm/198788139111",
       "price": "£1,995.00",
       "image": "stock-images/198788139111.jpg",
-      "subtitle": "Red 141121 Miles",
+      "subtitle": "Red, 141,121 Miles",
       "description": "2013 MERCEDES-BENZ B CLASS B200 CDI Blue EFFICIENCY Sport 5dr SERVICE HISTORY 2 key....",
       "details": [
         "2013",
         "141,121 Miles",
+        "MPV",
         "1796 ccm",
         "Red"
       ]
@@ -35,7 +36,7 @@
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£5,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/pbUAAeSwDpVq9Wl8/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/VhcAAeSwWfdq9rz-/$_2.JPG",
       "subtitle": "service history  £20 road tax Euro 6",
       "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
       "details": [
@@ -50,7 +51,7 @@
       "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£3,495.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/i8MAAeSwsi5q7DGx/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/VlUAAeSw9GBq9r0A/$_2.JPG",
       "subtitle": "full service history cam belt done  £35 road tax",
       "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
       "details": [
