@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-13T22:59:43.545Z",
-  "total": 14,
+  "updatedAt": "2026-11-14T12:41:08.501Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
@@ -36,7 +36,7 @@
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£5,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/VhcAAeSwWfdq9rz-/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/guYAAeSw6mJq-Aju/$_2.JPG",
       "subtitle": "service history  £20 road tax Euro 6",
       "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
       "details": [
@@ -45,21 +45,6 @@
         "Estate",
         "2143 ccm",
         "Red"
-      ]
-    },
-    {
-      "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/",
-      "price": "£3,495.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/VlUAAeSw9GBq9r0A/$_2.JPG",
-      "subtitle": "full service history cam belt done  £35 road tax",
-      "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
-      "details": [
-        "2015",
-        "161,998 Miles",
-        "Hatchback",
-        "1968 ccm",
-        "Silver"
       ]
     },
     {
