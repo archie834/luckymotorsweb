@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-11-19T14:53:05.943Z",
-  "total": 14,
+  "updatedAt": "2026-11-19T23:59:43.167Z",
+  "total": 15,
   "vehicles": [
+    {
+      "title": "2018 Citroen C3 Aircross 1.2 PureTech Flair 5dr MPV Petrol Manual",
+      "link": "https://www.ebay.co.uk/itm/198808484588",
+      "price": "£3,495.00",
+      "image": "stock-images/198808484588.jpg",
+      "subtitle": "Blue 117829 Miles",
+      "description": "2018 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
+      "details": [
+        "2018",
+        "117,829 Miles",
+        "1199 ccm",
+        "Blue"
+      ]
+    },
     {
       "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
       "link": "https://www.ebay.co.uk/itm/198794776091",
