@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T23:59:43.167Z",
+  "updatedAt": "2026-11-20T14:33:50.615Z",
   "total": 15,
   "vehicles": [
     {
@@ -7,11 +7,12 @@
       "link": "https://www.ebay.co.uk/itm/198808484588",
       "price": "£3,495.00",
       "image": "stock-images/198808484588.jpg",
-      "subtitle": "Blue 117829 Miles",
+      "subtitle": "Blue, 117,829 Miles",
       "description": "2018 CITROEN C3 AIRCROSS 1.2 PureTech 130 Flair 5dr service history drive spot on...",
       "details": [
         "2018",
         "117,829 Miles",
+        "MPV",
         "1199 ccm",
         "Blue"
       ]
@@ -65,7 +66,7 @@
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£5,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/96UAAeSwAl9q~qTL/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/r48AAeSwD61q~~Vd/$_2.JPG",
       "subtitle": "service history  £20 road tax Euro 6",
       "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
       "details": [
