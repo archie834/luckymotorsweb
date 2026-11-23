@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-22T22:56:18.494Z",
-  "total": 16,
+  "updatedAt": "2026-11-23T16:47:22.335Z",
+  "total": 15,
   "vehicles": [
     {
       "title": "2013 Volkswagen Golf 1.6 TDI 105 SE 5dr HATCHBACK Diesel Manual",
@@ -135,21 +135,6 @@
         "Estate",
         "1995 ccm",
         "White"
-      ]
-    },
-    {
-      "title": "2014 Honda CR-V 1.6 i-DTEC SR 5dr 2WD ESTATE Diesel Manual",
-      "link": "https://www.ebay.co.uk/itm/198744280982",
-      "price": "£3,450.00",
-      "image": "stock-images/198744280982.jpg",
-      "subtitle": "full service history tow tar with electric",
-      "description": "2014 Honda CR-V 1.6 i-DTEC SR SUV 5dr Diesel Manual (120 ps) FULL SERVICE HSTORY...",
-      "details": [
-        "2014",
-        "132,162 Miles",
-        "Estate",
-        "1597 ccm",
-        "Silver"
       ]
     },
     {
