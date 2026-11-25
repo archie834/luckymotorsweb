@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-25T01:43:27.063Z",
-  "total": 15,
+  "updatedAt": "2026-11-25T16:24:48.350Z",
+  "total": 13,
   "vehicles": [
     {
       "title": "2016 Fiat Punto 1.2 Easy+ 5dr HATCHBACK Petrol Manual",
@@ -63,21 +63,6 @@
       ]
     },
     {
-      "title": "2015 Volkswagen Golf 2.0 TDI Match 5dr DSG HATCHBACK Diesel Automatic",
-      "link": "https://www.ebay.co.uk/itm/198794776091",
-      "price": "£3,450.00",
-      "image": "stock-images/198794776091.jpg",
-      "subtitle": "full service history cam belt done £35 rd tax year",
-      "description": "2015 VOLKSWAGEN GOLF 2.0 TDI Match 5dr DSG automatic mk7 £35 road tax years full...",
-      "details": [
-        "2015",
-        "160,998 Miles",
-        "Hatchback",
-        "1968 ccm",
-        "Silver"
-      ]
-    },
-    {
       "title": "2013 Mercedes-Benz B Class B200 CDI BlueEFFICIENCY Sport 5dr MPV Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/198788139111",
       "price": "£1,995.00",
@@ -111,7 +96,7 @@
       "title": "2016 Mercedes-Benz GLA GLA 200d AMG Line 5dr ESTATE Diesel Manual",
       "link": "https://www.ebay.co.uk/itm/",
       "price": "£5,995.00",
-      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/r48AAeSwD61q~~Vd/$_2.JPG",
+      "image": "https://i.ebayimg.com/00/s/MTIwMFgxNjAw/z/hRwAAeSw5dtrBovR/$_2.JPG",
       "subtitle": "service history  £20 road tax Euro 6",
       "description": "2016 MERCEDES-BENZ GLA GLA 200d AMG Line 5dr IT IS CHEAP TO RUN AND INSURE AND EVEN...",
       "details": [
@@ -210,21 +195,6 @@
         "Hatchback",
         "1496 ccm",
         "Blue"
-      ]
-    },
-    {
-      "title": "2015 Vauxhall Corsa 1.2 Excite 5dr [AC] HATCHBACK Petrol Manual",
-      "link": "https://www.ebay.co.uk/itm/198715655592",
-      "price": "£2,295.00",
-      "image": "stock-images/198715655592.jpg",
-      "subtitle": "Red, 116,291 Miles",
-      "description": "2015 VAUXHALL CORSA 1.2 Excite 5dr [AC] come with service history drive spot on THE...",
-      "details": [
-        "2015",
-        "116,291 Miles",
-        "Hatchback",
-        "1229 ccm",
-        "Red"
       ]
     }
   ]
